@@ -11,19 +11,18 @@
 }
 
 .homeTabs {
-  display:          flex;
-  flex-wrap:        wrap;
-  width:            100%;
-  align-items:      flex-start;
-  max-width:        80%;
-  margin:           0 auto;
-  background-color: $lightColor;
-  padding:          3rem;
+  display:     flex;
+  flex-wrap:   wrap;
+  width:       100%;
+  align-items: flex-start;
+  max-width:   80%;
+  margin:      0 auto;
+  padding:     1.28rem 3.1rem 1.28rem 2.1rem;
   .homeTabList {
     font-size:      0.875rem;
     letter-spacing: 0.001875rem;
     line-height:    1.8125rem;
-    width:          20%;
+    width:          11.875rem;
     font-weight:    normal;
     .react-tabs__tab {
       cursor: pointer;
@@ -37,9 +36,17 @@
     }
   }
   .react-tabs__tab-panel--selected {
-    width: 75%;
+    width: calc(100% - 11.875rem);
   }
   .tabPanel {
+    h5 {
+      margin: 0.3rem 0 1.1rem 0;
+    }
+    p {
+      line-height:   1.3;
+      margin-bottom: 0.5rem;
+    }
+    padding-left: 4%;
     .databaseList {
       display:         flex;
       align-items:     center;
@@ -63,7 +70,7 @@
       }
     }
     button {
-      margin-bottom: 4rem;
+      margin-bottom: 0.6rem;
     }
     .vip {
       max-width:   26.1875rem;

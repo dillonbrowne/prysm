@@ -1,12 +1,28 @@
 @import "../../../assets/scss/variable";
 
+@media (any-hover: hover) {
+  .header {
+    .headerInner {
+      .menu {
+        ul li a:hover {
+          color: $mainColor;
+        }
+      }
+      .linkedin:hover {
+        opacity: .8;
+      }
+    }
+  }
+}
+
 .header {
-  padding: 0 3.25rem;
   .headerInner {
     display:         flex;
     align-items:     center;
     justify-content: space-between;
-    img {
+    min-height:      5.1875rem;
+    padding:         0 3.1%;
+    .logo {
       width: 7.5rem;
     }
     .menu {
@@ -15,14 +31,41 @@
         align-items:     center;
         justify-content: space-between;
         li {
-          padding: 2rem 1rem;
           a {
             text-decoration: none;
+            font-size:       0.75rem;
+            color:           #4f4f4f;
+            letter-spacing:  0.00625rem;
+            text-align:      center;
+            padding:         2.12rem 1rem;
+            display:         block;
+            &:active {
+              color:   $mainColor;
+              opacity: .8;
+            }
             &.active {
-              color: $mainColor;
+              color:       $blackColor;
+              font-weight: bold;
             }
           }
         }
+      }
+    }
+    .linkedin {
+      width: 1rem;
+      &:active {
+        opacity: .8;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .header {
+    .headerInner {
+      padding: 0;
+      .menu {
+        display: none;
       }
     }
   }

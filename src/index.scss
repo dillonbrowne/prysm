@@ -51,12 +51,19 @@ h4 {
 p {
   font-weight:    400;
   font-size:      0.875rem;
-  color:          #7e7670;
+  color:          $lightBrown;
   letter-spacing: 0.001875rem;
   line-height:    1.1875rem;
-  margin-bottom: 2rem;
+  margin-bottom:  1.2rem;
 }
 
 #root {
   height: 100%;
+}
+
+.container {
+  max-width: 100rem;
+  width:     100%;
+  margin:    0 auto;
+  padding:   0 0.9375rem;
 }

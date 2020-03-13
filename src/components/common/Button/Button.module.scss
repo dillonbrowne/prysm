@@ -16,11 +16,9 @@
   color:          $whiteColor;
   letter-spacing: 0.024375rem;
   text-align:     center;
-  padding:        0.5rem 1rem;
+  padding:        0.35rem 0.8rem;
   border:         none;
-  box-shadow:     0 0.125rem 0.25rem rgba(0, 0, 0, 0.50);
   &:active {
-    box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.50);
-    opacity:    0.8;
+    opacity: 0.8;
   }
 }

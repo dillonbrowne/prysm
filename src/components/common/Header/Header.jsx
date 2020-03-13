@@ -6,12 +6,13 @@ import {NavLink} from 'react-router-dom';
 //styles
 import styles from './Header.module.scss';
 import logo from "../../../assets/image/home/headerLogo.svg";
+import linkedin from "../../../assets/image/home/linkedin.svg";
 
 export const Header = () => {
     return (
-        <header className={styles.header}>
+        <header className={`${styles.header} container`}>
             <div className={styles.headerInner}>
-                <img src={logo} alt="logo"/>
+                <img className={styles.logo} src={logo} alt="logo"/>
                 <menu className={styles.menu}>
                     <ul>
                         <li>
@@ -28,7 +29,7 @@ export const Header = () => {
                         </li>
                     </ul>
                 </menu>
-                <a href="/">social</a>
+                <a href="/" className={styles.linkedin}><img src={linkedin} alt="linkedin"/></a>
             </div>
         </header>
     );

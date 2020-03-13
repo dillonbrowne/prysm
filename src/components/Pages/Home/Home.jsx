@@ -28,23 +28,25 @@ export const Home = () => {
             <img src={logo} alt="logo" className={styles.logo}/>
             <h1>Do more of what matters</h1>
         </section>
-
         <section className={styles.stay}>
             <div className={styles.stayLeft}>
-                <h3>
-                    Stay connected to clinicians and patients through a streamlined process that increases
-                    philanthropy.
-                </h3>
-                <p>
-                    Prysm is the first constituent relationship management application developed for non-profit
-                    healthcare. Prysm provides philanthropic foundations with a proven, repeatable process to
-                    effectively engage clinicians, elevate patient experience and improve philanthropic outcomes.
-                </p>
-                <p>
-                    By introducing an advanced lead generation component to your grateful patient program, your
-                    fundraising strategy becomes more intentional and your donor management system is able to perform as
-                    intended.
-                </p>
+                <div className={styles.stayLeftInner}>
+                    <h3>
+                        Stay connected to clinicians and patients through a streamlined process that increases
+                        philanthropy.
+                    </h3>
+                    <p>
+                        Prysm is the first constituent relationship management application developed for non-profit
+                        healthcare. Prysm provides philanthropic foundations with a proven, repeatable process to
+                        effectively engage clinicians, elevate patient experience and improve philanthropic outcomes.
+                    </p>
+                    <p>
+                        By introducing an advanced lead generation component to your grateful patient program, your
+                        fundraising strategy becomes more intentional and your donor management system is able to
+                        perform as
+                        intended.
+                    </p>
+                </div>
                 <div className={styles.stayButton}>
                     <Button text='see how it works'/>
                 </div>
@@ -53,8 +55,7 @@ export const Home = () => {
                 <img className={styles.monitor} src={monitor} alt="monitor"/>
             </div>
         </section>
-
-        <section className={styles.grateful}>
+        <section className={`${styles.grateful} container`}>
             <h3>Grateful Patient Philanthropy 2.0</h3>
             <ul>
                 <li>
@@ -80,32 +81,37 @@ export const Home = () => {
                 </li>
             </ul>
         </section>
-
         <section className={styles.why}>
-            <h3>Why Prysm</h3>
-            <h4>
-                Increased qualification activity = increased philanthropic revenue.
-                It’s that simple.
-            </h4>
-            <HomeTabs/>
+            <div className="container">
+                <h3>Why Prysm</h3>
+                <h4>
+                    Increased qualification activity = increased philanthropic revenue.
+                    It’s that simple.
+                </h4>
+                <HomeTabs/>
+            </div>
         </section>
         <section className={styles.technology}>
-            <h3>Prysm’s Technology Partner Ecosystem</h3>
-            <h4>
-                Leverage multiple cost effective HIPAA compliant integrations to drive exponential increases across all
-                areas of your fundraising enterprise.
-            </h4>
+            <div className="container">
+                <h3>Prysm’s Technology Partner Ecosystem</h3>
+                <h4>
+                    Leverage multiple cost effective HIPAA compliant integrations to drive exponential increases across
+                    all
+                    areas of your fundraising enterprise.
+                </h4>
+            </div>
         </section>
         <section className={styles.partners}>
 
             <div className={styles.partnersInner}>
                 <img src={cetrix} alt="cetrix"/>
                 <img src={geopointe} alt="geopointe"/>
-                <img src={telkdesk} alt="telkdesk"/>
                 <img src={we} alt="we"/>
                 <img src={windfall} alt="windfall"/>
+                <img src={telkdesk} alt="telkdesk"/>
             </div>
         </section>
+        <hr/>
         <section className={styles.how}>
             <h3>Discover how Prysm can work for you.</h3>
             <div className={styles.howButtons}>
@@ -113,6 +119,5 @@ export const Home = () => {
                 <Button text='request a demo'/>
             </div>
         </section>
-        <hr/>
     </div>);
 };
