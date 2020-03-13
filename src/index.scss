@@ -1,7 +1,11 @@
+@import "./assets/scss/variable";
+
 body, html {
-  margin:  0;
-  padding: 0;
-  height:  100%;
+  margin:      0;
+  padding:     0;
+  height:      100%;
+  font-family: 'Neuzeit Grotesk', sans-serif;
+  color:       $blackColor;
 }
 
 html {
@@ -14,6 +18,43 @@ html {
   padding:     0;
   margin:      0;
   outline:     none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  font-weight:    100;
+  font-size:      3.75rem;
+  line-height:    2.5rem;
+  color:          $whiteColor;
+  letter-spacing: 0;
+}
+
+h3 {
+  font-weight: 100;
+  font-size:   1.875rem;
+  line-height: 2.5rem;
+}
+
+h4 {
+  font-size:      1rem;
+  letter-spacing: -0.035rem;
+  line-height:    1.4375rem;
+}
+
+p {
+  font-weight:    400;
+  font-size:      0.875rem;
+  color:          #7e7670;
+  letter-spacing: 0.001875rem;
+  line-height:    1.1875rem;
+  margin-bottom: 2rem;
 }
 
 #root {

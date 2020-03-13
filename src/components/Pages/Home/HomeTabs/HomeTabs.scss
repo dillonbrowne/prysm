@@ -1,0 +1,73 @@
+@import "../../../../assets/scss/variable";
+
+@media (any-hover: hover) {
+  .homeTabs {
+    .homeTabList {
+      .react-tabs__tab:hover {
+        color: $mainColor;
+      }
+    }
+  }
+}
+
+.homeTabs {
+  display:          flex;
+  flex-wrap:        wrap;
+  width:            100%;
+  align-items:      flex-start;
+  max-width:        80%;
+  margin:           0 auto;
+  background-color: $lightColor;
+  padding:          3rem;
+  .homeTabList {
+    font-size:      0.875rem;
+    letter-spacing: 0.001875rem;
+    line-height:    1.8125rem;
+    width:          20%;
+    font-weight:    normal;
+    .react-tabs__tab {
+      cursor: pointer;
+      &.react-tabs__tab--selected {
+        color:       #1577D9;
+        font-weight: bold;
+      }
+      &:active {
+        opacity: .8;
+      }
+    }
+  }
+  .react-tabs__tab-panel--selected {
+    width: 75%;
+  }
+  .tabPanel {
+    .databaseList {
+      display:         flex;
+      align-items:     center;
+      justify-content: space-between;
+      flex-wrap:       wrap;
+      li {
+        display:         flex;
+        align-items:     flex-start;
+        justify-content: flex-start;
+        width:           48%;
+        margin-bottom:   1rem;
+        img {
+          width:        1.4375rem;
+          margin-right: 0.5rem;
+        }
+        .databaseDescription {
+          span {
+            display: block;
+          }
+        }
+      }
+    }
+    button {
+      margin-bottom: 4rem;
+    }
+    .vip {
+      max-width:   26.1875rem;
+      margin-left: 2rem;
+    }
+  }
+}

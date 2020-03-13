@@ -1,12 +1,26 @@
 @import "../../../assets/scss/variable";
 
 .header {
-  .menu {
-    ul {
-      li {
-        a {
-          &.active {
-            color: $mainColor;
+  padding: 0 3.25rem;
+  .headerInner {
+    display:         flex;
+    align-items:     center;
+    justify-content: space-between;
+    img {
+      width: 7.5rem;
+    }
+    .menu {
+      ul {
+        display:         flex;
+        align-items:     center;
+        justify-content: space-between;
+        li {
+          padding: 2rem 1rem;
+          a {
+            text-decoration: none;
+            &.active {
+              color: $mainColor;
+            }
           }
         }
       }
