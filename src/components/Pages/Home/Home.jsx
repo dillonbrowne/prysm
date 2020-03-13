@@ -5,5 +5,5 @@ import React from 'react';
 import styles from './Home.module.scss';
 
 export const Home = () => {
-    return (<div className={styles.home}>Home</div>);
+    return (<div className={styles.home}>home</div>);
 };

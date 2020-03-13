@@ -1,3 +1,15 @@
+@import "../../../assets/scss/variable";
+
 .header {
-  background: red;
+  .menu {
+    ul {
+      li {
+        a {
+          &.active {
+            color: $mainColor;
+          }
+        }
+      }
+    }
+  }
 }
