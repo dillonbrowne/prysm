@@ -14,7 +14,7 @@ import telephone from '../../../assets/image/about/telephone.jpg'
 export const About = () => {
     return (<div className={styles.about}>
         <Banner image={banner} text='Your success is our success.'/>
-        <section className={styles.stay}>
+        <section className={`${styles.stay} container`}>
             <div className={styles.stayLeft}>
                 <div className={styles.stayLeftInner}>
                     <h3>

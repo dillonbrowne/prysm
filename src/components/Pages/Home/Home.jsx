@@ -1,10 +1,9 @@
 // core
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 
 // components
-import {Banner, Button, SlickSlider, HowItWorks} from "../../common";
-import {HomeTabs} from "./HomeTabs/HomeTabs";
-import {HomeAccordion} from "./HomeAccordion/HomeAccordion";
+import {Banner, Button, HowItWorks} from "../../common";
+import {HomeTabs, HomeAccordion, SlickSlider} from "./components";
 
 // styles
 import styles from './Home.module.scss';
@@ -14,16 +13,38 @@ import halfMonitor from '../../../assets/image/home/halfMonitor.svg'
 import monitor from '../../../assets/image/home/monitor.svg'
 
 
-import cetrix from '../../../assets/image/home/partners/cetrix.svg'
-import geopointe from '../../../assets/image/home/partners/geopointe.svg'
-import telkdesk from '../../../assets/image/home/partners/telkdesk.svg'
-import we from '../../../assets/image/home/partners/we.svg'
-import windfall from '../../../assets/image/home/partners/windfall.svg'
+import cetrix from '../../../assets/image/partners/cetrix.svg'
+import geopointe from '../../../assets/image/partners/geopointe.svg'
+import telkdesk from '../../../assets/image/partners/telkdesk.svg'
+import we from '../../../assets/image/partners/we.svg'
+import windfall from '../../../assets/image/partners/windfall.svg'
 
 export const Home = () => {
+    const isClient = typeof window === 'object';
+    const [windowSize, setWindowSize] = useState(getSize);
+
+    function getSize() {
+        return {
+            width: isClient ? window.innerWidth : undefined,
+            height: isClient ? window.innerHeight : undefined
+        };
+    }
+
+    useEffect(() => {
+        if (!isClient) return false;
+
+        function handleResize() {
+            setWindowSize(getSize());
+        }
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, [isClient]); // Empty array ensures that effect is only run on mount and unmount
+
+
     return (<div className={styles.home}>
         <Banner logo={logo} image={banner} text='Do more of what matters'/>
-        <section className={styles.stay}>
+        <section className={`${styles.stay} container`}>
             <div className={styles.stayLeft}>
                 <div className={styles.stayLeftInner}>
                     <h3>
@@ -57,7 +78,7 @@ export const Home = () => {
         </section>
         <section className={styles.why}>
             <div className="container">
-                {window.innerWidth > 786 ? <HomeTabs/> : <HomeAccordion/>}
+                {windowSize.width > 767 ? <HomeTabs/> : <HomeAccordion/>}
 
             </div>
         </section>

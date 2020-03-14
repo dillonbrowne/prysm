@@ -10,9 +10,9 @@
       font-size:     0.75rem;
       line-height:   1.46;
     }
-    &:not(:last-child) {
-      border-right: 0.0625rem solid #d8d8d8;
-    }
+  }
+  .slick-slide:not(:last-child) {
+    border-right: 0.0625rem solid #d8d8d8;
   }
   .slick-dots {
     button:before {
@@ -30,9 +30,9 @@
       width:     100%;
       max-width: 20rem;
       margin:    0 auto;
-      &:not(:last-child) {
-        border: none;
-      }
+    }
+    .slick-slide:not(:last-child) {
+      border-right: none;
     }
   }
 }

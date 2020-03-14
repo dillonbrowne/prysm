@@ -2,13 +2,13 @@
 import React from 'react';
 
 // library
-import Slider from "react-slick";
+import Slider from "react-slick/lib";
 
 // styles
 import './SlickSlider.scss';
-import message from "../../../assets/image/home/message.svg";
-import diagram from "../../../assets/image/home/diagram.svg";
-import people from "../../../assets/image/home/people.svg";
+import message from "../../../../../assets/image/home/message.svg";
+import diagram from "../../../../../assets/image/home/diagram.svg";
+import people from "../../../../../assets/image/home/people.svg";
 
 export const SlickSlider = () => {
     const settings = {

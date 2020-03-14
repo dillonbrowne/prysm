@@ -5,11 +5,11 @@ import React from 'react';
 import styles from './Banner.module.scss';
 
 export const Banner = ({logo = false, image, text}) => {
-    return (<div className={styles.banner}>
-        <section className={styles.banner}>
+    return (
+        <section className={`${styles.banner} container`}>
             <img src={image} alt='banner'/>
             {logo && <img src={logo} alt="logo" className={styles.logo}/>}
             <h1>{text}</h1>
         </section>
-    </div>);
+    )
 };

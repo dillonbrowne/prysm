@@ -10,18 +10,18 @@ import {
 
 
 // components
-import {Button} from "../../../common";
-import fundraisers from '../../../../assets/image/home/whyPrysm/fundraisers.svg'
-import development from '../../../../assets/image/home/whyPrysm/development.svg'
-import management from '../../../../assets/image/home/whyPrysm/management.svg'
-import discovery from '../../../../assets/image/home/whyPrysm/discovery.svg'
-import annual from '../../../../assets/image/home/whyPrysm/annual.svg'
-import vip from '../../../../assets/image/home/whyPrysm/vip.png'
+import {Button} from "../../../../common";
+import fundraisers from '../../../../../assets/image/home/whyPrysm/fundraisers.svg'
+import development from '../../../../../assets/image/home/whyPrysm/development.svg'
+import management from '../../../../../assets/image/home/whyPrysm/management.svg'
+import discovery from '../../../../../assets/image/home/whyPrysm/discovery.svg'
+import annual from '../../../../../assets/image/home/whyPrysm/annual.svg'
+import vip from '../../../../../assets/image/home/whyPrysm/vip.png'
 
-import security from '../../../../assets/image/home/whyPrysm/security.svg'
-import integration from '../../../../assets/image/home/whyPrysm/integration.svg'
-import clock from '../../../../assets/image/home/whyPrysm/clock.svg'
-import analyze from '../../../../assets/image/home/whyPrysm/analyze.svg'
+import security from '../../../../../assets/image/home/whyPrysm/security.svg'
+import integration from '../../../../../assets/image/home/whyPrysm/integration.svg'
+import clock from '../../../../../assets/image/home/whyPrysm/clock.svg'
+import analyze from '../../../../../assets/image/home/whyPrysm/analyze.svg'
 
 
 // styles
