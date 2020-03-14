@@ -1,7 +1,7 @@
 import React from 'react';
 
 //library
-import {NavLink} from 'react-router-dom';
+import {NavLink, Link} from 'react-router-dom';
 
 //styles
 import styles from './Header.module.scss';
@@ -12,7 +12,9 @@ export const Header = () => {
     return (
         <header className={`${styles.header} container`}>
             <div className={styles.headerInner}>
-                <img className={styles.logo} src={logo} alt="logo"/>
+                <Link to="/home">
+                    <img className={styles.logo} src={logo} alt="logo"/>
+                </Link>
                 <menu className={styles.menu}>
                     <ul>
                         <li>

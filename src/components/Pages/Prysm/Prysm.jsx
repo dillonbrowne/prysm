@@ -1,9 +1,9 @@
 // core
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 
 // components
 import {Banner, HowItWorks} from "../../common";
-import {PrysmSlider, PrysmTabs} from "./components";
+import {PrysmAccordion, PrysmSlider, PrysmTabs} from "./components";
 
 
 // styles
@@ -28,6 +28,29 @@ import notebook3 from "../../../assets/image/prysm/notebook-3.webp";
 import notebook4 from "../../../assets/image/prysm/notebook-4.webp";
 
 export const Prysm = () => {
+
+    const isClient = typeof window === 'object';
+    const [windowSize, setWindowSize] = useState(getSize);
+
+    function getSize() {
+        return {
+            width: isClient ? window.innerWidth : undefined,
+            height: isClient ? window.innerHeight : undefined
+        };
+    }
+
+    useEffect(() => {
+        if (!isClient) return false;
+
+        function handleResize() {
+            setWindowSize(getSize());
+        }
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, [isClient]); // Empty array ensures that effect is only run on mount and unmount
+
+
     return (<div className={styles.prysm}>
         <Banner image={banner} text='How it works' logo={logo}/>
         <div className={`${styles.provide} container`}>
@@ -41,7 +64,9 @@ export const Prysm = () => {
                 engagement.
             </h4>
         </div>
-        <PrysmTabs/>
+        {windowSize.width > 767
+            ? <PrysmTabs/>
+            : <PrysmAccordion/>}
         <section className={`${styles.grateful} container`}>
             <h3>Prysm Features</h3>
             <PrysmSlider/>

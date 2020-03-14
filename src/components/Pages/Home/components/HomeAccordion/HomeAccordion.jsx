@@ -10,7 +10,6 @@ import {
 
 
 // components
-import {Button} from "../../../../common";
 import fundraisers from '../../../../../assets/image/home/whyPrysm/fundraisers.svg'
 import development from '../../../../../assets/image/home/whyPrysm/development.svg'
 import management from '../../../../../assets/image/home/whyPrysm/management.svg'
@@ -26,7 +25,7 @@ import analyze from '../../../../../assets/image/home/whyPrysm/analyze.svg'
 // styles
 import './HomeAccordion.scss';
 
-export const HomeAccordion = ({windowSize}) => {
+export const HomeAccordion = () => {
     const [show, setShow] = useState(false);
 
     return (
@@ -50,7 +49,6 @@ export const HomeAccordion = ({windowSize}) => {
                         streamlined process for clinician engagement and patient outreach. This leads to an exponential
                         increase in discovery visits with patients.
                     </p>
-                   {windowSize.width > 767 && <Button text='see how it works'/>}
                     <img src={fundraisers} alt=""/>
                 </AccordionItemPanel>
             </AccordionItem>
@@ -79,7 +77,6 @@ export const HomeAccordion = ({windowSize}) => {
                             Engage stakeholders in dynamic, evidence based conversations about patient philanthropy.
                         </li>
                     </ul>
-                    <Button text='see how it works'/>
                     <h4>Focus on the metrics that matter.</h4>
                     <img src={development} alt="development"/>
                 </AccordionItemPanel>
@@ -107,7 +104,6 @@ export const HomeAccordion = ({windowSize}) => {
                         learning
                         partners transforms prospect management’s role in grateful patient philanthropy.
                     </p>
-                    <Button text='see how it works'/>
                     <img src={management} alt="management"/>
                 </AccordionItemPanel>
             </AccordionItem>
@@ -130,7 +126,6 @@ export const HomeAccordion = ({windowSize}) => {
                         management system is able to perform as intended and your fundraising strategy becomes more
                         flexible. Manage your PHI and related applications in one secure system.
                     </p>
-                    <Button text='see how it works'/>
                     <ul className='databaseList'>
                         <li>
                             <img src={security} alt="security"/>
@@ -184,7 +179,6 @@ export const HomeAccordion = ({windowSize}) => {
                         through Prysm’s native integration with TalkDesk. Automate activity tracking, recording and
                         reporting to contact more patients with less effort.
                     </p>
-                    <Button text='see how it works'/>
                     <img src={discovery} alt="discovery"/>
                 </AccordionItemPanel>
 
@@ -204,7 +198,6 @@ export const HomeAccordion = ({windowSize}) => {
                         Hyper segmented affinity and capacity modeling enables organizations to develop personalized
                         communications to patients based on individual affinity to specific departments and clinicians.
                     </p>
-                    <Button text='see how it works'/>
                     <img src={annual} alt="annual"/>
                 </AccordionItemPanel>
             </AccordionItem>
@@ -243,9 +236,6 @@ export const HomeAccordion = ({windowSize}) => {
                     <p>
                         Choreograph service excellence across your health system.
                     </p>
-                    <div className="">
-                        <Button text='see how it works'/>
-                    </div>
                     <img src={vip} alt="vip" className='vip'/>
                 </AccordionItemPanel>
             </AccordionItem>

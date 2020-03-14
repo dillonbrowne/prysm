@@ -33,6 +33,9 @@
       width:     100%;
       max-width: 20rem;
       margin:    0 auto;
+      ul {
+        margin-bottom: 2rem;
+      }
     }
     .slick-slide:not(:last-child) {
       border-right: none;

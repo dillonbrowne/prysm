@@ -19,6 +19,7 @@
   .prysmTabList {
     display:         flex;
     justify-content: space-between;
+    align-items:     flex-end;
     font-size:       0.875rem;
     letter-spacing:  0.001875rem;
     line-height:     1.8125rem;
@@ -29,7 +30,7 @@
       color:         $lightBrown;
       border-bottom: 0.0625rem solid $lightBrown;
       width:         20%;
-      padding:       0.42rem 0 0.82rem 0;
+      padding:       0.42rem 0.5rem 0.82rem 0;
       line-height:   1.7;
       &.react-tabs__tab--selected {
         font-weight:   bold;

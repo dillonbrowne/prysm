@@ -89,7 +89,7 @@ export const Home = () => {
                         </h4>
                         <HomeTabs/>
                     </>)
-                    : <HomeAccordion windowSize={windowSize}/>}
+                    : <HomeAccordion/>}
 
             </div>
         </section>
