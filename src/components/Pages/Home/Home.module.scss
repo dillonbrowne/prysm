@@ -44,14 +44,17 @@
     }
     .stayRight {
       width: 38%;
-      .monitor {
+      .halfMonitor {
         width: 100%;
+      }
+      .monitor {
+        display: none;
       }
     }
   }
   .grateful {
     text-align:    center;
-    margin-bottom: 6.25rem;
+    margin-bottom: 8.25rem;
     h3 {
       margin-bottom: 2.6rem;
     }
@@ -59,29 +62,11 @@
       height:        4rem;
       margin-bottom: 1.1rem;
     }
-    ul {
-      display:         flex;
-      justify-content: space-between;
-      align-items:     flex-start;
-      padding:         0 4.6875rem;
-      li {
-        width:  31.2%;
-        height: 100%;
-        p {
-          text-align:    left;
-          padding:       0 1rem;
-          margin-bottom: 0;
-          font-size:     0.75rem;
-          line-height:   1.46;
-        }
-        &:not(:last-child) {
-          border-right: 0.0625rem solid #d8d8d8;
-        }
-      }
-    }
   }
   .why {
-    padding:          1.8rem 0 0 0;
+    max-width:        80%;
+    margin:           0 auto;
+    padding:          1.2rem 0 0 0;
     background-color: $lightColor;
     h3 {
       text-align:    center;
@@ -98,7 +83,7 @@
     text-align:       center;
     background-color: $lightColor;
     padding:          1.6rem 0;
-    margin:           4rem 0 0 0;
+    margin:           5rem 0 0 0;
     letter-spacing:   -0.03rem;
     h3 {
       margin-bottom: 1rem;
@@ -106,7 +91,7 @@
     h4 {
       max-width: 30rem;
       margin:    0 auto;
-      color: $lightBrown;
+      color:     $lightBrown;
     }
   }
   .partners {
@@ -142,6 +127,49 @@
       button {
         margin: 1.7rem 0.7rem;
       }
+    }
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .home {
+    .stay {
+      flex-direction: column;
+      .stayLeft {
+        width:         100%;
+        padding:       0 2rem;
+        margin-bottom: 2rem;
+        button {
+          display: none;
+        }
+      }
+      .stayRight {
+        width:  50%;
+        margin: 0 auto;
+        .halfMonitor {
+          display: none;
+        }
+        .monitor {
+          display: block;
+        }
+      }
+    }
+    .how {
+      background: $whiteColor;
+      box-shadow: 0 0 0.625rem 0 rgba(0, 0, 0, 0.30);
+      position:   fixed;
+      bottom:     0;
+      width:      100%;
+      padding:    0;
+      .howButtons {
+        button {
+          margin: 1rem 0.7rem;
+        }
+      }
+    }
+    hr {
+      margin-bottom: 4rem;
     }
   }
 }

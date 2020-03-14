@@ -1,0 +1,38 @@
+.slider {
+  padding: 0 4.6875rem;
+  .sliderItem {
+    width:  31.2%;
+    height: 100%;
+    p {
+      text-align:    left;
+      padding:       0 1rem;
+      margin-bottom: 0;
+      font-size:     0.75rem;
+      line-height:   1.46;
+    }
+    &:not(:last-child) {
+      border-right: 0.0625rem solid #d8d8d8;
+    }
+  }
+  .slick-dots {
+    button:before {
+      background: #bebab7;
+    }
+    .slick-active button:before {
+      background: #1577d9;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slider {
+    .sliderItem {
+      width:     100%;
+      max-width: 20rem;
+      margin:    0 auto;
+      &:not(:last-child) {
+        border: none;
+      }
+    }
+  }
+}
