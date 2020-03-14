@@ -9,6 +9,7 @@ import {HomeTabs, HomeAccordion, SlickSlider} from "./components";
 import styles from './Home.module.scss';
 import banner from "../../../assets/image/home/banner-home.png";
 import logo from '../../../assets/image/logo.svg'
+import logoBlack from '../../../assets/image/logo-black.svg'
 import halfMonitor from '../../../assets/image/home/halfMonitor.svg'
 import monitor from '../../../assets/image/home/monitor.svg'
 
@@ -43,10 +44,11 @@ export const Home = () => {
 
 
     return (<div className={styles.home}>
-        <Banner logo={logo} image={banner} text='Do more of what matters'/>
+        <Banner logo={logo} image={banner} text='Do more of what matters' windowSize={windowSize}/>
         <section className={`${styles.stay} container`}>
             <div className={styles.stayLeft}>
                 <div className={styles.stayLeftInner}>
+                    {windowSize.width < 767 && <div className={styles.homeLogo}><img src={logoBlack} alt="logo"/></div>}
                     <h3>
                         Stay connected to clinicians and patients through a streamlined process that increases
                         philanthropy.
@@ -87,7 +89,7 @@ export const Home = () => {
                         </h4>
                         <HomeTabs/>
                     </>)
-                    : <HomeAccordion/>}
+                    : <HomeAccordion windowSize={windowSize}/>}
 
             </div>
         </section>

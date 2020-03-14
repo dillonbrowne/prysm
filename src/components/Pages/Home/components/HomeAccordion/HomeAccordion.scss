@@ -12,6 +12,7 @@
   width:     100%;
   max-width: 100%;
   margin:    0 auto;
+  color:     #89817B;
   .homeHeading {
     font-size:      0.875rem;
     letter-spacing: 0.001875rem;
@@ -19,9 +20,30 @@
     width:          100%;
     font-weight:    normal;
     border-top:     1px solid #BEBAB7;
-    border-bottom:  1px solid #BEBAB7;
     padding:        1rem 2rem;
-
+    position:       relative;
+    &::before {
+      content:         '';
+      background:      url("../../../../../assets/image/close.svg") center center no-repeat;
+      background-size: 100%;
+      position:        absolute;
+      width:           1.125rem;
+      height:          1.125rem;
+      right:           1.7rem;
+      top:             50%;
+      transform:       translateY(-50%) rotate(0deg);
+      transition:      .2s linear;
+    }
+    &.open:before {
+      transform: translateY(-50%) rotate(45deg);
+    }
+    &:active, &:hover {
+      opacity: .8;
+    }
+    div[aria-expanded='true'] {
+      color:       #1577d9;
+      font-weight: bold;
+    }
   }
   .accordionPanel {
     h5 {
@@ -59,6 +81,15 @@
     .vip {
       max-width:   26.1875rem;
       margin-left: 2rem;
+    }
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .homeAccordion {
+    .accordionPanel {
+      padding: 1rem 2rem;
     }
   }
 }

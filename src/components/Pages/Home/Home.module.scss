@@ -3,7 +3,10 @@
 .home {
   width:  100%;
   height: 100%;
-
+  h1 {
+    bottom: 14.7%;
+    left:   6.8%;
+  }
   .stay {
     display:         flex;
     flex-wrap:       wrap;
@@ -16,6 +19,14 @@
         padding-right: 2%;
         p:nth-last-child(1) {
           margin-bottom: 0.7rem;
+        }
+        .homeLogo {
+          max-width:  100%;
+          text-align: center;
+          img {
+            max-width:     44%;
+            margin-bottom: 1rem;
+          }
         }
       }
       h3 {
@@ -112,9 +123,15 @@
         button {
           display: none;
         }
+        .stayLeftInner {
+          background: $whiteColor;
+          position:   relative;
+          margin-top: -5.2rem;
+          padding:    1.1rem 0.6rem 0 0.6rem;
+        }
       }
       .stayRight {
-        width:  50%;
+        width:  68%;
         margin: 0 auto;
         .halfMonitor {
           display: none;
@@ -136,6 +153,33 @@
     }
     hr {
       margin-bottom: 4rem;
+    }
+    h1 {
+      bottom: 22%;
+      left:   9.8%;
+    }
+    .partners {
+      overflow: auto;
+      .partnersInner {
+        min-width: 30rem;
+      }
+    }
+    .grateful {
+      margin-bottom: 3.9rem;
+    }
+    .technology {
+      margin:     1rem 0 0 0;
+      max-height: 14.375rem;
+      > div {
+        padding:    1rem;
+        background: white;
+        margin:     2rem;
+        width:      calc(100% - 4rem);
+        h4 {
+          text-align:  left;
+          font-weight: normal;
+        }
+      }
     }
   }
 }

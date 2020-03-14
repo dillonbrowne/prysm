@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Group 10</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0.420882353,0.0734558824 L0.0736764706,0.420441176 C-0.0253676471,0.519485294 -0.0238235294,0.676323529 0.0736764706,0.773823529 L6.72573529,7.42676471 C6.82389706,7.52470588 6.98161765,7.52426471 7.07911765,7.42654412 L7.42610294,7.07955882 C7.52536765,6.98051471 7.52382353,6.82367647 7.42632353,6.72617647 L0.774264706,0.0732352941 C0.725294118,0.0242647059 0.661544118,0 0.597794118,0 C0.533823529,0 0.469632353,0.0244852941 0.420882353,0.0734558824 L0.420882353,0.0734558824 Z" id="path-1"></path>
+    </defs>
+    <g id="100819_Current" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="home-mobile" transform="translate(-275.000000, -1292.000000)">
+            <g id="Group-10" transform="translate(285.000000, 1302.000000) rotate(45.000000) translate(-285.000000, -1302.000000) translate(276.000000, 1293.000000)">
+                <g id="Group-22" transform="translate(9.000000, 9.000000) rotate(45.000000) translate(-9.000000, -9.000000) translate(5.250000, 5.250000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-21"></g>
+                </g>
+                <line x1="6.34834957" y1="6.30266312" x2="11.6516504" y2="11.605964" id="Stroke-23" stroke="#1577D9" stroke-linecap="round" transform="translate(9.000000, 8.954314) rotate(45.000000) translate(-9.000000, -8.954314) "></line>
+                <line x1="11.6973369" y1="6.34834957" x2="6.39403602" y2="11.6516504" id="Stroke-25" stroke="#1577D9" stroke-linecap="round" transform="translate(9.045686, 9.000000) rotate(45.000000) translate(-9.045686, -9.000000) "></line>
+                <circle id="Oval" stroke="#1577D9" cx="9" cy="9" r="9"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

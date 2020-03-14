@@ -1,5 +1,5 @@
 // core
-import React from 'react';
+import React, {useState} from 'react';
 import {
     Accordion,
     AccordionItem,
@@ -23,11 +23,12 @@ import integration from '../../../../../assets/image/home/whyPrysm/integration.s
 import clock from '../../../../../assets/image/home/whyPrysm/clock.svg'
 import analyze from '../../../../../assets/image/home/whyPrysm/analyze.svg'
 
-
 // styles
 import './HomeAccordion.scss';
 
-export const HomeAccordion = () => {
+export const HomeAccordion = ({windowSize}) => {
+    const [show, setShow] = useState(false);
+
     return (
         <Accordion
             allowMultipleExpanded
@@ -49,13 +50,13 @@ export const HomeAccordion = () => {
                         streamlined process for clinician engagement and patient outreach. This leads to an exponential
                         increase in discovery visits with patients.
                     </p>
-                    <Button text='see how it works'/>
+                   {windowSize.width > 767 && <Button text='see how it works'/>}
                     <img src={fundraisers} alt=""/>
                 </AccordionItemPanel>
             </AccordionItem>
 
             <AccordionItem>
-                <AccordionItemHeading className='homeHeading'>
+                <AccordionItemHeading className={`homeHeading ${show ? 'open' : ''}`} onClick={() => setShow(!show)}>
                     <AccordionItemButton>Development Executives</AccordionItemButton>
                 </AccordionItemHeading>
                 <AccordionItemPanel className="accordionPanel">
