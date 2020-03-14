@@ -3,22 +3,7 @@
 .home {
   width:  100%;
   height: 100%;
-  .banner {
-    width:    100%;
-    position: relative;
-    .logo {
-      position: absolute;
-      bottom:   27%;
-      left:     3%;
-      width:    9.5rem;
-    }
-    h1 {
-      position:       absolute;
-      bottom:         17.7%;
-      left:           6.8%;
-      letter-spacing: -0.025rem;
-    }
-  }
+
   .stay {
     display:         flex;
     flex-wrap:       wrap;
@@ -113,22 +98,6 @@
     background: $lightColor;
     height:     2.125rem;
   }
-  .how {
-    padding: 4.2rem 0;
-    h3 {
-      font-weight:    bold;
-      color:          $lightBrown;
-      letter-spacing: -0.095rem;
-      text-align:     center;
-      line-height:    2.5625rem;
-    }
-    .howButtons {
-      text-align: center;
-      button {
-        margin: 1.7rem 0.7rem;
-      }
-    }
-  }
 }
 
 
@@ -152,19 +121,6 @@
         }
         .monitor {
           display: block;
-        }
-      }
-    }
-    .how {
-      background: $whiteColor;
-      box-shadow: 0 0 0.625rem 0 rgba(0, 0, 0, 0.30);
-      position:   fixed;
-      bottom:     0;
-      width:      100%;
-      padding:    0;
-      .howButtons {
-        button {
-          margin: 1rem 0.7rem;
         }
       }
     }

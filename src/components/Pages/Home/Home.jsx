@@ -2,13 +2,13 @@
 import React from 'react';
 
 // components
-import {Button, SlickSlider} from "../../common";
+import {Banner, Button, SlickSlider, HowItWorks} from "../../common";
 import {HomeTabs} from "./HomeTabs/HomeTabs";
 import {HomeAccordion} from "./HomeAccordion/HomeAccordion";
 
 // styles
 import styles from './Home.module.scss';
-import banner from '../../../assets/image/home/banner-home.png'
+import banner from "../../../assets/image/home/banner-home.png";
 import logo from '../../../assets/image/logo.svg'
 import halfMonitor from '../../../assets/image/home/halfMonitor.svg'
 import monitor from '../../../assets/image/home/monitor.svg'
@@ -22,11 +22,7 @@ import windfall from '../../../assets/image/home/partners/windfall.svg'
 
 export const Home = () => {
     return (<div className={styles.home}>
-        <section className={styles.banner}>
-            <img src={banner} alt='banner'/>
-            <img src={logo} alt="logo" className={styles.logo}/>
-            <h1>Do more of what matters</h1>
-        </section>
+        <Banner logo={logo} image={banner} text='Do more of what matters'/>
         <section className={styles.stay}>
             <div className={styles.stayLeft}>
                 <div className={styles.stayLeftInner}>
@@ -76,7 +72,6 @@ export const Home = () => {
             </div>
         </section>
         <section className={styles.partners}>
-
             <div className={styles.partnersInner}>
                 <img src={cetrix} alt="cetrix"/>
                 <img src={geopointe} alt="geopointe"/>
@@ -86,12 +81,6 @@ export const Home = () => {
             </div>
         </section>
         <hr/>
-        <section className={styles.how}>
-            <h3>Discover how Prysm can work for you.</h3>
-            <div className={styles.howButtons}>
-                <Button text='see how it works'/>
-                <Button text='request a demo'/>
-            </div>
-        </section>
+        <HowItWorks/>
     </div>);
 };

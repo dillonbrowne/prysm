@@ -1,0 +1,26 @@
+.banner {
+  width:    100%;
+  position: relative;
+  .logo {
+    position: absolute;
+    bottom:   27%;
+    left:     3%;
+    width:    9.5rem;
+  }
+  h1 {
+    position:       absolute;
+    bottom:         15.7%;
+    left:           4.8%;
+    letter-spacing: -0.025rem;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .banner {
+    h1 {
+      left:      9.8%;
+      bottom:    28%;
+      font-size: 1.88rem;
+    }
+  }
+}
