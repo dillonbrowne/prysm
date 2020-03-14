@@ -1,45 +1,29 @@
 @import "../../../../assets/scss/variable";
 
 @media (any-hover: hover) {
-  .homeTabs {
-    .homeTabList {
-      .react-tabs__tab:hover {
-        color: $mainColor;
-      }
+  .homeAccordion {
+    .homeHeading {
+
     }
   }
 }
 
-.homeTabs {
-  display:     flex;
-  flex-wrap:   wrap;
-  width:       100%;
-  align-items: flex-start;
-  max-width:   100%;
-  margin:      0 auto;
-  padding:     1.28rem 2.3rem 0.28rem 1.1rem;
-  .homeTabList {
-    padding-right:   4%;
+.homeAccordion {
+  width:     100%;
+  max-width: 100%;
+  margin:    0 auto;
+  .homeHeading {
     font-size:      0.875rem;
     letter-spacing: 0.001875rem;
     line-height:    1.8125rem;
-    width:          13.75rem;
+    width:          100%;
     font-weight:    normal;
-    .react-tabs__tab {
-      cursor: pointer;
-      &.react-tabs__tab--selected {
-        color:       #1577D9;
-        font-weight: bold;
-      }
-      &:active {
-        opacity: .8;
-      }
-    }
+    border-top:     1px solid #BEBAB7;
+    border-bottom:  1px solid #BEBAB7;
+    padding:        1rem 2rem;
+
   }
-  .react-tabs__tab-panel--selected {
-    width: calc(100% - 4% - 13.75rem);
-  }
-  .tabPanel {
+  .accordionPanel {
     h5 {
       margin: 0.3rem 0 1.1rem 0;
     }

@@ -4,6 +4,7 @@ import React from 'react';
 // components
 import {Button, SlickSlider} from "../../common";
 import {HomeTabs} from "./HomeTabs/HomeTabs";
+import {HomeAccordion} from "./HomeAccordion/HomeAccordion";
 
 // styles
 import styles from './Home.module.scss';
@@ -18,7 +19,6 @@ import geopointe from '../../../assets/image/home/partners/geopointe.svg'
 import telkdesk from '../../../assets/image/home/partners/telkdesk.svg'
 import we from '../../../assets/image/home/partners/we.svg'
 import windfall from '../../../assets/image/home/partners/windfall.svg'
-
 
 export const Home = () => {
     return (<div className={styles.home}>
@@ -61,12 +61,8 @@ export const Home = () => {
         </section>
         <section className={styles.why}>
             <div className="container">
-                <h3>Why Prysm</h3>
-                <h4>
-                    Increased qualification activity = increased philanthropic revenue.
-                    It’s that simple.
-                </h4>
-                <HomeTabs/>
+                {window.innerWidth > 786 ? <HomeTabs/> : <HomeAccordion/>}
+
             </div>
         </section>
         <section className={styles.technology}>
