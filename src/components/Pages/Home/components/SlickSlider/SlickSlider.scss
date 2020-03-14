@@ -1,4 +1,4 @@
-.slider {
+.slickSlider {
   padding: 0 4.6875rem;
   .sliderItem {
     width:  31.2%;
@@ -25,11 +25,10 @@
 }
 
 @media screen and (max-width: 768px) {
-  .slider {
+  .slickSlider {
     .sliderItem {
       width:     100%;
       max-width: 20rem;
-      margin:    0 auto;
       p {
         margin-bottom: 1.8rem;
       }

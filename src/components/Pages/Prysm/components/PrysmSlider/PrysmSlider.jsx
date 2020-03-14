@@ -18,6 +18,7 @@ export const PrysmSlider = () => {
         arrows: false,
         speed: 500,
         slidesToShow: 4,
+        slidesToScroll: 1,
         responsive: [
             {
                 breakpoint: 768,
@@ -28,11 +29,11 @@ export const PrysmSlider = () => {
             }
         ]
     };
-    return (<div className='slider'>
+    return (<div className='prysmSlider'>
         <Slider {...settings}>
             <div className='sliderItem'>
                 <img src={development} alt="message"/>
-                <h4>Grateful Patient Pipeline Development</h4>
+                <h4>Grateful Patient <br/> Pipeline Development</h4>
                 <ul>
                     <li>Major giving lead generation</li>
                     <li>Prospect management & research</li>

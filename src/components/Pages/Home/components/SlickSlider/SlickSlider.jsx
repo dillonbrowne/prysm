@@ -27,7 +27,7 @@ export const SlickSlider = () => {
             }
         ]
     };
-    return (<div className='slider'>
+    return (<div className='slickSlider'>
         <Slider {...settings}>
             <div className='sliderItem'>
                 <img src={message} alt="message"/>

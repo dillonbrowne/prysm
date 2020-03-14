@@ -89,15 +89,18 @@
       justify-content: center;
       flex-wrap:       wrap;
       .resultsItem {
-        width:    8.125rem;
-        position: relative;
-        margin:   0 1.8rem;
+        width:      23%;
+        position:   relative;
+        text-align: center;
+        img {
+          width: 60%;
+        }
         .resultsText {
-          position:  absolute;
-          left:      -32%;
-          top:       54%;
-          width:     9rem;
-          transform: translateX(50%);
+          position:   absolute;
+          right:      0;
+          top:        54%;
+          width:      9rem;
+          text-align: left;
           div {
             font-size:      2.625rem;
             font-weight:    bold;
@@ -232,49 +235,7 @@
       line-height:    2.5rem;
     }
     .amountInner {
-      display:         flex;
-      flex-wrap:       wrap;
-      align-items:     center;
-      justify-content: center;
-      .amountItem {
-        width:            26%;
-        margin:           2%;
-        background-color: #f2f2f2;
-        position:         relative;
-        padding:          3rem 2rem;
-        height:           20.5rem;
-        .amountTitle {
-          position:         absolute;
-          top:              1.6rem;
-          left:             -1rem;
-          font-weight:      bold;
-          background-color: #233d8c;
-          padding:          0.4rem 1.6rem;
-          color:            $whiteColor;
-        }
-        .amountValue {
-          font-size:      2.375rem;
-          font-weight:    bold;
-          margin:         3rem 0 1.6rem 0;
-          color:          #333;
-          letter-spacing: -0.0475rem;
-          line-height:    1.875rem;
-        }
-        .amountList {
-          li {
-            font-size:      1.125rem;
-            color:          #333;
-            letter-spacing: -0.02rem;
-            line-height:    1.875rem;
-          }
-        }
-        img {
-          width: 50%;
-        }
-        hr {
-          margin: 1rem 0 1.4rem 0;
-        }
-      }
+      text-align: center;
     }
   }
 }
@@ -316,8 +277,16 @@
     .results {
       .resultsList {
         .resultsItem {
-          width:         13rem;
+          width:         49%;
           margin-bottom: 2rem;
+          img {
+            width: 36%;
+          }
+          .resultsText {
+            div {
+              font-size: 1.7rem;
+            }
+          }
         }
       }
     }
@@ -334,6 +303,9 @@
               padding:          1rem 1rem;
               width:            calc(100% - 4rem);
               margin:           -3rem 2rem 3rem;
+              p {
+                font-size: 0.875rem;
+              }
             }
           }
           &:nth-child(even) {
@@ -346,6 +318,9 @@
               padding:          1rem 1rem;
               width:            calc(100% - 4rem);
               margin:           -3rem 2rem 3rem;
+              p {
+                font-size: 0.875rem;
+              }
             }
           }
         }
@@ -353,14 +328,66 @@
     }
     .integrates {
       flex-direction: column;
-      padding:        1rem 2rem 1rem 2rem;
+      padding:        0.4rem 2rem 1rem 2rem;
       h3 {
         width:         100%;
         text-align:    center;
-        margin-bottom: 2rem;
+        margin-bottom: 5rem;
+        padding-top:   0;
       }
       img {
         width: 100%;
+      }
+    }
+    .case {
+      flex-direction: column;
+      margin:         0 auto;
+      > div.caseDescription {
+        padding:       0 2rem 0 2rem;
+        width:         100%;
+        margin-bottom: 2rem;
+      }
+      img {
+        width:   100%;
+        padding: 0 2rem;
+      }
+    }
+    .analyze {
+      flex-direction: column;
+      img {
+        width:         100%;
+        margin-bottom: 2rem;
+      }
+      h3 {
+        width: 100%;
+      }
+    }
+    .major {
+      flex-direction: column;
+      h3 {
+        width: 100%;
+      }
+      .majorDescription {
+        width: 100%;
+      }
+    }
+    .provide {
+      h3 {
+        background: white;
+        margin-top: -4rem;
+        position:   relative;
+        padding:    1.4rem 0.8rem;
+      }
+      h4 {
+        font-size:   1rem;
+        line-height: 1.4375;
+      }
+    }
+    .grateful {
+      margin-top:    6rem;
+      margin-bottom: 0;
+      h3 {
+        margin-bottom: 2.4rem;
       }
     }
   }

@@ -1,0 +1,75 @@
+@import "../../../../../assets/scss/variable";
+
+.prysmAmountSlider {
+  padding: 0 0.9rem;
+  .sliderItem {
+    background-color: #f2f2f2;
+    position:         relative;
+    padding:          3rem 2rem;
+    height:           22.5rem;
+    max-width:        90%;
+    margin:           2rem auto;
+    h4 {
+      min-height: 3.6rem;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left:    2rem;
+      li {
+        text-align: left;
+      }
+    }
+
+    .amountTitle {
+      position:         absolute;
+      top:              1.6rem;
+      left:             -1rem;
+      font-weight:      bold;
+      background-color: #233d8c;
+      padding:          0.4rem 1.6rem;
+      color:            $whiteColor;
+    }
+    .amountValue {
+      font-size:      2.375rem;
+      font-weight:    bold;
+      margin:         3rem 0 1.6rem 0;
+      color:          #333;
+      letter-spacing: -0.0475rem;
+      line-height:    1.875rem;
+    }
+    .amountList {
+      li {
+        font-size:      1.125rem;
+        color:          #333;
+        letter-spacing: -0.02rem;
+        line-height:    1.875rem;
+      }
+    }
+    img {
+      width: 40%;
+    }
+    hr {
+      margin: 1rem 0 1.4rem 0;
+    }
+  }
+  .slick-dots {
+    button:before {
+      background: #bebab7;
+    }
+    .slick-active button:before {
+      background: #1577d9;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .prysmAmountSlider {
+    .sliderItem {
+      width:     100%;
+      max-width: 20rem;
+      ul {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}

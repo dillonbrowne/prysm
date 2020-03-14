@@ -81,8 +81,9 @@ blockquote {
   letter-spacing: -0.00625rem;
   line-height:    2.625rem;
   position:       relative;
-  max-width:      37rem;
   margin:         0 auto 4rem auto;
+  max-width:      43rem;
+  padding:        0 3rem;
   &:after, &:before {
     content:        '"';
     position:       absolute;
@@ -98,11 +99,11 @@ blockquote {
   }
   &:before {
     top:  0;
-    left: -3rem;
+    left: 0;
   }
   &:after {
     bottom: 4rem;
-    right:  -2rem;
+    right:  0;
   }
   span {
     margin-top: 1rem;
@@ -124,7 +125,12 @@ blockquote {
     line-height:    1.625rem;
   }
 
-  blockquote{
+  blockquote {
     margin:         0 auto 10rem auto;
+    font-size:      .875rem;
+
+    color:          #7e7670;
+    letter-spacing: -0.00375rem;
+    line-height:    1.1875rem;
   }
 }

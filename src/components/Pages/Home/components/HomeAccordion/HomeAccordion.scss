@@ -31,11 +31,11 @@
       height:          1.125rem;
       right:           1.7rem;
       top:             50%;
-      transform:       translateY(-50%) rotate(0deg);
+      transform:       translateY(-50%) rotate(45deg);
       transition:      .2s linear;
     }
     &.open:before {
-      transform: translateY(-50%) rotate(45deg);
+      transform: translateY(-50%) rotate(0deg);
     }
     &:active, &:hover {
       opacity: .8;

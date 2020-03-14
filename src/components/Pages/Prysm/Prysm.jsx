@@ -3,14 +3,13 @@ import React, {useEffect, useState} from 'react';
 
 // components
 import {Banner, HowItWorks} from "../../common";
-import {PrysmAccordion, PrysmSlider, PrysmTabs} from "./components";
+import {PrysmAccordion, PrysmSlider, PrysmTabs, PrysmAmountSlider} from "./components";
 
 
 // styles
 import styles from './Prysm.module.scss';
 import banner from "../../../assets/image/prysm/prysm-banner.webp";
 import logo from '../../../assets/image/logo.svg'
-import logoBlack from '../../../assets/image/logo-black.svg'
 import integrations from "../../../assets/image/prysm/integrations.webp";
 import arrow from "../../../assets/image/prysm/arrow.svg";
 import analyze from "../../../assets/image/prysm/analyze.webp";
@@ -69,7 +68,7 @@ export const Prysm = () => {
             : <PrysmAccordion/>}
         <section className={`${styles.grateful} container`}>
             <h3>Prysm Features</h3>
-            <PrysmSlider/>
+            <PrysmSlider windowSize={windowSize}/>
         </section>
         <section className={`${styles.integrates} container`}>
             <h3>
@@ -233,37 +232,7 @@ export const Prysm = () => {
             <div className="container">
                 <h3>Average $ Amount Raised per Major Gift Officer</h3>
                 <div className={styles.amountInner}>
-                    <div className={styles.amountItem}>
-                        <div className={styles.amountTitle}>Health System 1</div>
-                        <div className={styles.amountValue}>$42,908</div>
-                        <hr/>
-                        <ul className={styles.amountList}>
-                            <li>8 MGO’s</li>
-                            <li>Raiser’s Edge</li>
-                            <li>Microsoft Access</li>
-                        </ul>
-                    </div>
-                    <div className={styles.amountItem}>
-                        <div className={styles.amountTitle}>Health System 1</div>
-                        <div className={styles.amountValue}>$42,908</div>
-                        <hr/>
-                        <ul className={styles.amountList}>
-                            <li>8 MGO’s</li>
-                            <li>Raiser’s Edge</li>
-                            <li>Microsoft Access</li>
-                        </ul>
-                    </div>
-                    <div className={styles.amountItem}>
-                        <div className={styles.amountTitle}>Health System 1</div>
-                        <div className={styles.amountValue}>$42,908</div>
-                        <hr/>
-                        <ul className={styles.amountList}>
-                            <li>8 MGO’s</li>
-                            <li>Raiser’s Edge</li>
-                            <li>Microsoft Access</li>
-                        </ul>
-                        <img src={logoBlack} alt="logo"/>
-                    </div>
+                    <PrysmAmountSlider/>
                 </div>
             </div>
         </section>

@@ -9,3 +9,10 @@
   position:   relative;
   min-height: 100%;
 }
+
+
+@media screen and (max-width: 567px) {
+  .app {
+    padding-top: 69px;
+  }
+}
