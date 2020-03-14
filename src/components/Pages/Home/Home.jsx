@@ -78,7 +78,16 @@ export const Home = () => {
         </section>
         <section className={styles.why}>
             <div className="container">
-                {windowSize.width > 767 ? <HomeTabs/> : <HomeAccordion/>}
+                {windowSize.width > 767
+                    ? (<>
+                        <h3>Why Prysm</h3>
+                        <h4>
+                            Increased qualification activity = increased philanthropic revenue.
+                            It’s that simple.
+                        </h4>
+                        <HomeTabs/>
+                    </>)
+                    : <HomeAccordion/>}
 
             </div>
         </section>

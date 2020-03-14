@@ -45,7 +45,7 @@ export const HomeTabs = () => {
                 <Button text='see how it works'/>
                 <img src={fundraisers} alt=""/>
             </TabPanel>
-            <TabPanel className="tabPanel">
+            <TabPanel className="tabPanel second">
                 <p>By insourcing a quantifiable process for patient outreach and grateful patient identification, your
                     501(c3) will establish an internal knowledgebase about the unique characteristics that drive
                     grateful patient philanthropy in your health system.
@@ -63,7 +63,7 @@ export const HomeTabs = () => {
                 <h4>Focus on the metrics that matter.</h4>
                 <img src={development} alt="development"/>
             </TabPanel>
-            <TabPanel className="tabPanel">
+            <TabPanel className="tabPanel third">
                 <h5>Prospect Management</h5>
                 <p>
                     Prysm provides prospect managers with a suite of tools to identify grateful patient opportunities.
@@ -76,7 +76,7 @@ export const HomeTabs = () => {
                 <Button text='see how it works'/>
                 <img src={management} alt="management"/>
             </TabPanel>
-            <TabPanel className="tabPanel">
+            <TabPanel className="tabPanel four">
                 <p>Prysm integrates with your health system’s EMR and Donor Management System.</p>
                 <p>
                     By introducing an advanced HIPAA compliant component to your grateful patient program, your donor
@@ -96,30 +96,30 @@ export const HomeTabs = () => {
                     <li>
                         <img src={integration} alt="integration"/>
                         <div className='databaseDescription'>
-                            <h5>Security</h5>
-                            <span>HIPAA compliant</span>
-                            <span>single sign on (SS0)</span>
+                            <h5>Integrate</h5>
+                            <span>100’s of available API’s</span>
+                            <span>Declutter your donor management system</span>
                         </div>
                     </li>
                     <li>
                         <img src={clock} alt="clock"/>
                         <div className='databaseDescription'>
-                            <h5>Security</h5>
-                            <span>HIPAA compliant</span>
-                            <span>single sign on (SS0)</span>
+                            <h5>Save Time</h5>
+                            <span>ime saving automation</span>
+                            <span>Drag and drop reporting</span>
                         </div>
                     </li>
                     <li>
                         <img src={analyze} alt="analyze"/>
                         <div className='databaseDescription'>
-                            <h5>Security</h5>
-                            <span>HIPAA compliant</span>
-                            <span>single sign on (SS0)</span>
+                            <h5>Analyze and Inform</h5>
+                            <span>Comprehensive activity and historical reporting</span>
+                            <span>Benchmarking analysis</span>
                         </div>
                     </li>
                 </ul>
             </TabPanel>
-            <TabPanel className="tabPanel">
+            <TabPanel className="tabPanel five">
                 <p>
                     Increase activity and number of patient discovery visits using in-platform calling lists and queues
                     through Prysm’s native integration with TalkDesk. Automate activity tracking, recording and
