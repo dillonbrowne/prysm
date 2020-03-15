@@ -1,0 +1,40 @@
+.prysmHeading {
+  font-size:      0.875rem;
+  letter-spacing: 0.001875rem;
+  line-height:    1.8125rem;
+  width:          100%;
+  font-weight:    normal;
+  border-top:     1px solid #BEBAB7;
+  padding:        1rem 2rem;
+  position:       relative;
+  &::before {
+    content:         '';
+    background:      url("../../../../../../assets/image/close.svg") center center no-repeat;
+    background-size: 100%;
+    position:        absolute;
+    width:           1.125rem;
+    height:          1.125rem;
+    right:           1.7rem;
+    top:             50%;
+    transform:       translateY(-50%) rotate(135deg);
+    transition:      .2s linear;
+  }
+  &.open:before {
+    transform: translateY(-50%) rotate(0deg);
+  }
+  &:active, &:hover {
+    opacity: .8;
+  }
+  div[aria-expanded='true'] {
+    color:       #1577d9;
+    font-weight: bold;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .prysmHeading {
+    padding:     0.4rem 2rem 0.3rem 2rem;
+    line-height: 1.5;
+  }
+}

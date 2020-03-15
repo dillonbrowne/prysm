@@ -1,15 +1,13 @@
 // core
-import React, {useState} from 'react';
-import {
-    Accordion,
-    AccordionItem,
-    AccordionItemHeading,
-    AccordionItemButton,
-    AccordionItemPanel,
-} from 'react-accessible-accordion';
+import React from 'react';
+import {Accordion, AccordionItem, AccordionItemPanel} from 'react-accessible-accordion';
 
 
 // components
+import {HomeAccordionItemHeading} from "./HomeAccordionItemHeading/HomeAccordionItemHeading";
+
+// styles
+import './HomeAccordion.scss';
 import fundraisers from '../../../../../assets/image/home/whyPrysm/fundraisers.svg'
 import development from '../../../../../assets/image/home/whyPrysm/development.svg'
 import management from '../../../../../assets/image/home/whyPrysm/management.svg'
@@ -22,21 +20,15 @@ import integration from '../../../../../assets/image/home/whyPrysm/integration.s
 import clock from '../../../../../assets/image/home/whyPrysm/clock.svg'
 import analyze from '../../../../../assets/image/home/whyPrysm/analyze.svg'
 
-// styles
-import './HomeAccordion.scss';
 
 export const HomeAccordion = () => {
-    const [show, setShow] = useState(false);
-
     return (
         <Accordion
             allowMultipleExpanded
             allowZeroExpanded
             className='homeAccordion'>
             <AccordionItem>
-                <AccordionItemHeading className='homeHeading'>
-                    <AccordionItemButton>Frontline Fundraisers</AccordionItemButton>
-                </AccordionItemHeading>
+                <HomeAccordionItemHeading title='Frontline Fundraisers'/>
                 <AccordionItemPanel className="accordionPanel">
                     <h3>Why Prysm</h3>
                     <h4>
@@ -52,11 +44,8 @@ export const HomeAccordion = () => {
                     <img src={fundraisers} alt=""/>
                 </AccordionItemPanel>
             </AccordionItem>
-
             <AccordionItem>
-                <AccordionItemHeading className={`homeHeading ${show ? 'open' : ''}`} onClick={() => setShow(!show)}>
-                    <AccordionItemButton>Development Executives</AccordionItemButton>
-                </AccordionItemHeading>
+                <HomeAccordionItemHeading title='Development Executives'/>
                 <AccordionItemPanel className="accordionPanel">
                     <h3>Why Prysm</h3>
                     <h4>
@@ -81,11 +70,8 @@ export const HomeAccordion = () => {
                     <img src={development} alt="development"/>
                 </AccordionItemPanel>
             </AccordionItem>
-
             <AccordionItem>
-                <AccordionItemHeading className='homeHeading'>
-                    <AccordionItemButton>Prospect Management</AccordionItemButton>
-                </AccordionItemHeading>
+                <HomeAccordionItemHeading title='Prospect Management'/>
                 <AccordionItemPanel className="accordionPanel">
                     <h3>Why Prysm</h3>
                     <h4>
@@ -107,12 +93,8 @@ export const HomeAccordion = () => {
                     <img src={management} alt="management"/>
                 </AccordionItemPanel>
             </AccordionItem>
-
-
             <AccordionItem>
-                <AccordionItemHeading className='homeHeading'>
-                    <AccordionItemButton>IT and Database Management</AccordionItemButton>
-                </AccordionItemHeading>
+                <HomeAccordionItemHeading title='IT and Database Management'/>
                 <AccordionItemPanel className="accordionPanel">
                     <h3>Why Prysm</h3>
                     <h4>
@@ -162,11 +144,8 @@ export const HomeAccordion = () => {
                     </ul>
                 </AccordionItemPanel>
             </AccordionItem>
-
             <AccordionItem>
-                <AccordionItemHeading className='homeHeading'>
-                    <AccordionItemButton>Discovery Visit Scheduling</AccordionItemButton>
-                </AccordionItemHeading>
+                <HomeAccordionItemHeading title='Discovery Visit Scheduling'/>
                 <AccordionItemPanel className="accordionPanel">
                     <h3>Why Prysm</h3>
                     <h4>
@@ -181,13 +160,9 @@ export const HomeAccordion = () => {
                     </p>
                     <img src={discovery} alt="discovery"/>
                 </AccordionItemPanel>
-
             </AccordionItem>
-
             <AccordionItem>
-                <AccordionItemHeading className='homeHeading'>
-                    <AccordionItemButton>Annual Giving</AccordionItemButton>
-                </AccordionItemHeading>
+                <HomeAccordionItemHeading title='Annual Giving'/>
                 <AccordionItemPanel className="accordionPanel">
                     <h3>Why Prysm</h3>
                     <h4>
@@ -201,12 +176,8 @@ export const HomeAccordion = () => {
                     <img src={annual} alt="annual"/>
                 </AccordionItemPanel>
             </AccordionItem>
-
             <AccordionItem>
-
-                <AccordionItemHeading className='homeHeading'>
-                    <AccordionItemButton>Patient Experience</AccordionItemButton>
-                </AccordionItemHeading>
+                <HomeAccordionItemHeading title='Patient Experience'/>
                 <AccordionItemPanel className="accordionPanel">
                     <h3>Why Prysm</h3>
                     <h4>
@@ -215,12 +186,8 @@ export const HomeAccordion = () => {
                     </h4>
                 </AccordionItemPanel>
             </AccordionItem>
-
             <AccordionItem>
-                <AccordionItemHeading className='homeHeading'>
-                    <AccordionItemButton>PVIP Concierge </AccordionItemButton>
-                </AccordionItemHeading>
-
+                <HomeAccordionItemHeading title='PVIP Concierge'/>
                 <AccordionItemPanel className="accordionPanel">
                     <h3>Why Prysm</h3>
                     <h4>

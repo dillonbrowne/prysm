@@ -38,7 +38,7 @@ export const PrysmAmountSlider = () => {
                 </ul>
             </div>
             <div className='sliderItem'>
-                <div className='amountTitle'>Health System 1</div>
+                <div className='amountTitle'>Health System 2</div>
                 <div className='amountValue'>$62,000</div>
                 <hr/>
                 <ul className='amountList'>
@@ -48,7 +48,7 @@ export const PrysmAmountSlider = () => {
                 </ul>
             </div>
             <div className='sliderItem'>
-                <div className='amountTitle'>Health System 1</div>
+                <div className='amountTitle'>Health System 3</div>
                 <div className='amountValue'>$516,000</div>
                 <hr/>
                 <ul className='amountList'>

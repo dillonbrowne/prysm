@@ -1,12 +1,6 @@
 // core
-import React, {useState} from 'react';
-import {
-    Accordion,
-    AccordionItem,
-    AccordionItemHeading,
-    AccordionItemButton,
-    AccordionItemPanel,
-} from 'react-accessible-accordion';
+import React from 'react';
+import {Accordion, AccordionItem, AccordionItemPanel} from 'react-accessible-accordion';
 
 
 // components
@@ -19,22 +13,16 @@ import step2 from "../../../../../assets/image/prysm/step-2.svg";
 import step3 from "../../../../../assets/image/prysm/step-3.svg";
 import step4 from "../../../../../assets/image/prysm/step-4_1.svg";
 import step5 from "../../../../../assets/image/prysm/step-5.svg";
+import {PrysmAccordionItemHeading} from "./PrysmAccordionItemHeading/PrysmAccordionItemHeading";
 
 export const PrysmAccordion = () => {
-    const [show, setShow] = useState(false);
-
     return (
         <Accordion
             allowMultipleExpanded
             allowZeroExpanded
             className='prysmAccordion'>
             <AccordionItem>
-                <AccordionItemHeading className={`prysmHeading ${show ? 'open' : ''}`} onClick={() => setShow(!show)}>
-                    <AccordionItemButton>
-                        Step 1
-                        <div>Generate patient list</div>
-                    </AccordionItemButton>
-                </AccordionItemHeading>
+                <PrysmAccordionItemHeading title=' Step 1' subtitle='Generate patient list'/>
                 <AccordionItemPanel className="accordionPanel">
                     <h3>
                         When clinicians are engaged in a process with analytically sound information and consistent
@@ -45,12 +33,7 @@ export const PrysmAccordion = () => {
                 </AccordionItemPanel>
             </AccordionItem>
             <AccordionItem>
-                <AccordionItemHeading className={`prysmHeading ${show ? 'open' : ''}`} onClick={() => setShow(!show)}>
-                    <AccordionItemButton>
-                        Step 2
-                        <div>Review with clinicians</div>
-                    </AccordionItemButton>
-                </AccordionItemHeading>
+                <PrysmAccordionItemHeading title=' Step 2' subtitle='Review with clinicians'/>
                 <AccordionItemPanel className="accordionPanel">
                     <h3>
                         When clinicians are engaged in a process with analytically sound information and consistent
@@ -61,12 +44,7 @@ export const PrysmAccordion = () => {
                 </AccordionItemPanel>
             </AccordionItem>
             <AccordionItem>
-                <AccordionItemHeading className={`prysmHeading ${show ? 'open' : ''}`} onClick={() => setShow(!show)}>
-                    <AccordionItemButton>
-                        Step 3
-                        <div>Contact patients</div>
-                    </AccordionItemButton>
-                </AccordionItemHeading>
+                <PrysmAccordionItemHeading title=' Step 3' subtitle='Contact patients'/>
                 <AccordionItemPanel className="accordionPanel">
                     <h3>
                         Intuitive in-platform phone call and email tracking enables fundraisers to efficiently record
@@ -76,12 +54,7 @@ export const PrysmAccordion = () => {
                 </AccordionItemPanel>
             </AccordionItem>
             <AccordionItem>
-                <AccordionItemHeading className={`prysmHeading ${show ? 'open' : ''}`} onClick={() => setShow(!show)}>
-                    <AccordionItemButton>
-                        Step 4
-                        <div>Report outcomes</div>
-                    </AccordionItemButton>
-                </AccordionItemHeading>
+                <PrysmAccordionItemHeading title=' Step 4' subtitle='Report outcomes'/>
                 <AccordionItemPanel className="accordionPanel">
                     <h3>
                         Intuitive single click reporting enables fundraisers to view clinicians’ patients using a
@@ -91,15 +64,8 @@ export const PrysmAccordion = () => {
                     <img src={step4} alt="step4"/>
                 </AccordionItemPanel>
             </AccordionItem>
-
-
             <AccordionItem>
-                <AccordionItemHeading className={`prysmHeading ${show ? 'open' : ''}`} onClick={() => setShow(!show)}>
-                    <AccordionItemButton>
-                        Step 5
-                        <div>Optimize strategy</div>
-                    </AccordionItemButton>
-                </AccordionItemHeading>
+                <PrysmAccordionItemHeading title=' Step 5' subtitle='Optimize strategy'/>
                 <AccordionItemPanel className="accordionPanel">
                     <h3>
                         Easily track and record outcomes of discovery activity to optimize program strategy.
