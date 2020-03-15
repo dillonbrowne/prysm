@@ -13,6 +13,10 @@
     left:           4.8%;
     letter-spacing: -0.025rem;
   }
+  img:first-child {
+    object-fit: contain;
+    min-height: 12.625rem;
+  }
 }
 
 @media screen and (max-width: 567px) {

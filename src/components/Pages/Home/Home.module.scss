@@ -126,7 +126,7 @@
         .stayLeftInner {
           background: $whiteColor;
           position:   relative;
-          margin-top: -5.2rem;
+          margin-top: -6.2rem;
           padding:    1.1rem 0.6rem 0 0.6rem;
         }
       }
@@ -161,20 +161,23 @@
     .partners {
       overflow: auto;
       .partnersInner {
-        min-width: 30rem;
+        min-width: 40rem;
       }
     }
     .grateful {
       margin-bottom: 3.9rem;
     }
     .technology {
-      margin:     1rem 0 0 0;
+      margin:     2rem 0 0 0;
       max-height: 14.375rem;
       > div {
         padding:    1rem;
         background: white;
-        margin:     2rem;
+        margin:     2rem 2rem 0 2rem;
         width:      calc(100% - 4rem);
+        h3 {
+          margin-bottom: 2rem;
+        }
         h4 {
           text-align:  left;
           font-weight: normal;

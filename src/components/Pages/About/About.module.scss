@@ -77,7 +77,10 @@
           display: none;
         }
         .monitor {
-          display: block;
+          display:         block;
+          max-height:      82vw;
+          object-position: top;
+          object-fit:      cover;
         }
       }
     }
