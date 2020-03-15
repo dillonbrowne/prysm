@@ -148,7 +148,6 @@
           padding: 0 10%;
           img {
             max-width:       6.8rem;
-            margin-bottom:   1.6rem;
             max-height:      4.4375rem;
             object-fit:      contain;
             object-position: left;
@@ -195,9 +194,21 @@
           }
           .partnerSubList {
             list-style-type: disc;
-            padding-left:    2rem;
+            padding-left:    1rem;
             li {
               flex-direction: row;
+              position:       relative;
+              &:after {
+                content:       '';
+                position:      absolute;
+                width:         0.25rem;
+                height:        0.25rem;
+                background:    black;
+                top:           50%;
+                left:          -1rem;
+                transform:     translateY(-50%);
+                border-radius: 50%;
+              }
             }
           }
           &.direct {
@@ -304,6 +315,7 @@
         }
       }
       h4 {
+        line-height: 1.4rem;
         &:after, &:before {
           display: none;
         }
@@ -318,27 +330,57 @@
               width: 100%;
             }
             .partnersDescription {
-              background-color: $whiteColor;
-              padding:          1rem 1rem;
-              width:            calc(100% - 4rem);
-              margin:           -3rem 2rem 3rem;
+              padding: 1rem 0;
+              width:   calc(100% - 4rem);
               p {
-                font-size: 0.875rem;
+                font-size:   0.875rem;
+                line-height: 1.46;
+                &:nth-last-child(1) {
+                  margin-bottom: 0;
+                }
               }
             }
           }
           &:nth-child(even) {
             flex-direction: column;
             .partnerImage {
-              width: 100%;
+              width:           100%;
+              height:          105vw;
+              object-fit:      cover;
+              object-position: top;
             }
             .partnersDescription {
-              background-color: $whiteColor;
-              padding:          1rem 1rem;
-              width:            calc(100% - 4rem);
-              margin:           -3rem 2rem 3rem;
+              padding:       1rem 0;
+              width:         calc(100% - 4rem);
+              margin-bottom: 1.2rem;
               p {
-                font-size: 0.875rem;
+                font-size:   0.875rem;
+                line-height: 1.46;
+              }
+            }
+          }
+          .partnersDescription {
+            h3 {
+              margin-top:    -2.7rem;
+              background:    $whiteColor;
+              padding:       2rem 1.7rem 0.5rem 0.7rem;
+              text-align:    center;
+              margin-bottom: 1.2rem;
+              img {
+                margin-bottom:   0;
+                object-position: center;
+              }
+            }
+            .partnerRate {
+              margin-top: 3rem;
+              .partnerRateItem {
+                div {
+                  font-size:     3.625rem;
+                  margin-bottom: 0.5rem;
+                }
+                span {
+                  font-size: 0.7rem;
+                }
               }
             }
           }
@@ -361,7 +403,7 @@
     .case {
       padding:        0;
       flex-direction: column;
-      margin:         0 auto;
+      margin:         2rem auto 0 auto;
       > div.caseDescription {
         padding:       0 2rem 0 2rem;
         width:         100%;
@@ -376,7 +418,9 @@
       }
     }
     .analyze {
+      margin-top:     6rem;
       flex-direction: column;
+      margin-bottom:  1.3rem;
       img {
         width:         100%;
         margin-bottom: 2rem;
@@ -415,6 +459,14 @@
       }
       img {
         height: 3.6rem;
+      }
+    }
+    .amount {
+      h3 {
+        padding:        0 2rem;
+        font-size:      1.125rem;
+        letter-spacing: 0.001875rem;
+        line-height:    1.625rem;
       }
     }
   }

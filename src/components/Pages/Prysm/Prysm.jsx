@@ -150,7 +150,7 @@ export const Prysm = () => {
                     <li>
                         <img className={styles.partnerImage} src={notebook1} alt="notebook"/>
                         <div className={styles.partnersDescription}>
-                            <img src={windfall} alt="windfall"/>
+                            <h3><img src={windfall} alt="windfall"/></h3>
                             <p>
                                 Windfall is changing the way that organizations identify, understand, and engage the
                                 affluent. Through next generation API technology, Windfall’s data science and machine
@@ -171,7 +171,7 @@ export const Prysm = () => {
                     <li>
                         <img className={styles.partnerImage} src={notebook2} alt="notebook"/>
                         <div className={styles.partnersDescription}>
-                            <img src={telkdesk} alt="telkdesk"/>
+                            <h3><img src={telkdesk} alt="telkdesk"/></h3>
                             <p>
                                 Through an innovation partnership with TalkDesk, Prysm provides a seamless discovery
                                 visit scheduling process that drives transformational patient outreach.
@@ -181,7 +181,7 @@ export const Prysm = () => {
                     <li>
                         <img className={styles.partnerImage} src={notebook3} alt="notebook3"/>
                         <div className={styles.partnersDescription}>
-                            <img src={we} alt="we"/>
+                            <h3><img src={we} alt="we"/></h3>
                             <p>
                                 By combining WealthEngine’s proven wealth screening technology with real-time patient
                                 encounter analysis and integrated AI, Prysm transforms development’s ability to engage
@@ -192,7 +192,7 @@ export const Prysm = () => {
                     <li>
                         <img className={styles.partnerImage} src={notebook4} alt="notebook"/>
                         <div className={`${styles.partnersDescription} ${styles.direct}`}>
-                            <img src={geopointe} alt="geopointe"/>
+                            <h3><img src={geopointe} alt="geopointe"/></h3>
                             <p>
                                 Gain deep insight into your patient population with Geopointe.
                             </p>
