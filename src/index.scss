@@ -132,5 +132,8 @@ blockquote {
     color:          #7e7670;
     letter-spacing: -0.00375rem;
     line-height:    1.1875rem;
+    &:after {
+      bottom: 1rem;
+    }
   }
 }
