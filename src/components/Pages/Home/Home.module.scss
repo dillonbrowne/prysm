@@ -41,7 +41,9 @@
     .stayRight {
       width: 38%;
       .halfMonitor {
-        width: 100%;
+        position: absolute;
+        width: 20em;
+        right:0;
       }
       .monitor {
         display: none;
@@ -49,6 +51,7 @@
     }
   }
   .grateful {
+    padding-top: 10em;
     text-align:    center;
     margin-bottom: 8.25rem;
     max-width:     1400px;

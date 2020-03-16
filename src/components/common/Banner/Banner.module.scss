@@ -1,6 +1,14 @@
 .banner {
   width:    100%;
   position: relative;
+  .upper{
+    position: absolute;
+    top: 0;
+  }
+  .lower{
+    position: absolute;
+    top: 0;
+  }
   .logo {
     position: absolute;
     bottom:   28%;
@@ -13,11 +21,10 @@
     left:           4.8%;
     letter-spacing: -0.025rem;
   }
-  img:first-child {
+  .cover{
     object-fit: cover;
     width:      100%;
-    min-height: 12.625rem;
-    max-height: 50rem;
+    height: 50vh;
   }
 }
 

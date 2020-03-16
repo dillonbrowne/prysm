@@ -31,8 +31,7 @@ export const HomeTabs = () => {
                 <Tab>IT and Database Management</Tab>
                 <Tab>Discovery Visit Scheduling</Tab>
                 <Tab>Annual Giving</Tab>
-                <Tab>Patient Experience</Tab>
-                <Tab>PVIP Concierge </Tab>
+                <Tab>VIP Concierge </Tab>
             </TabList>
 
             <TabPanel className="tabPanel">
