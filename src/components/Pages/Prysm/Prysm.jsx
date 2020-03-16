@@ -204,6 +204,8 @@ export const Prysm = () => {
                             <ul className={styles.partnerSubList}>
                                 <li>Major Giving</li>
                                 <li>Direct Mail</li>
+                                <li>Digital Marketing</li>
+                                <li>Events</li>
                             </ul>
                         </div>
                     </li>

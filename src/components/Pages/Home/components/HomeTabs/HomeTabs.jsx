@@ -1,7 +1,7 @@
 // core
 import React from 'react';
 import {Tabs, TabList, Tab, TabPanel} from 'react-tabs'
-
+import HoverImage from "react-hover-image"
 
 // components
 import {Button} from "../../../../common";
@@ -16,7 +16,7 @@ import security from '../../../../../assets/image/home/whyPrysm/security.svg'
 import integration from '../../../../../assets/image/home/whyPrysm/integration.svg'
 import clock from '../../../../../assets/image/home/whyPrysm/clock.svg'
 import analyze from '../../../../../assets/image/home/whyPrysm/analyze.svg'
-
+import rollOver from "../../../../../assets/image/rollover.png"
 
 // styles
 import './HomeTabs.scss';
@@ -42,7 +42,11 @@ export const HomeTabs = () => {
                     increase in discovery visits with patients.
                 </p>
                 <Button text='see how it works'/>
-                <img src={fundraisers} alt=""/>
+                <HoverImage
+                    src={fundraisers}
+                    hoverSrc={rollOver}
+                />
+                {/*<img src={fundraisers} alt=""/>*/}
             </TabPanel>
             <TabPanel className="tabPanel second">
                 <p>By insourcing a quantifiable process for patient outreach and grateful patient identification, your

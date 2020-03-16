@@ -30,9 +30,7 @@ export const Header = () => {
                         <li onClick={() => addClass()}>
                             <NavLink to='/about' activeClassName={styles.active}>About</NavLink>
                         </li>
-                        <li onClick={() => addClass()}>
-                            <NavLink to='/contact_us' activeClassName={styles.active}>Contact Us</NavLink>
-                        </li>
+
                     </ul>
                 </menu>
 
