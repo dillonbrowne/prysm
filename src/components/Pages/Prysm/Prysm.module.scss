@@ -1,6 +1,15 @@
 @import "../../../assets/scss/variable";
 
 .prysm {
+  .integrations{
+    max-width:25%
+  }
+  .analyzemonitor{
+    max-width: 30%;
+  }
+  .total{
+    max-width:25%
+  }
   .provide {
     padding:    1.3rem 2rem;
     text-align: center;
@@ -27,6 +36,7 @@
   }
   .integrates {
     display:         flex;
+    width:75%;
     justify-content: space-between;
     align-items:     center;
     margin:          0 auto;

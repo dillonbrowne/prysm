@@ -4,10 +4,12 @@
   .upper{
     position: absolute;
     top: 0;
+    width: 100vw;
   }
   .lower{
     position: absolute;
-    top: 0;
+    bottom: -2.2rem;
+    width: 100vw;
   }
   .logo {
     position: absolute;

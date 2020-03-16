@@ -74,7 +74,7 @@ export const Prysm = () => {
             <h3>
                 Prysm integrates seamlessly with your health system’s EMR and Donor Management System.
             </h3>
-            <img src={integrations} alt="integrations"/>
+            <img className={styles.integrations} src={integrations} alt="integrations"/>
         </section>
         <section className={`${styles.major} container`}>
             <h3>
@@ -127,7 +127,7 @@ export const Prysm = () => {
             </ul>
         </section>
         <section className={`${styles.analyze} container`}>
-            <img src={analyze} alt="analyze"/>
+            <img className={styles.analyzemonitor} src={analyze} alt="analyze"/>
             <h3>Analyze program growth and performance in real time to identify opportunities and maximize results.</h3>
         </section>
         <section className={styles.partners}>
@@ -226,7 +226,7 @@ export const Prysm = () => {
                     donations totaling $1.8M.
                 </p>
             </div>
-            <img src={total} alt="total"/>
+            <img className={styles.total} src={total} alt="total"/>
         </section>
         <section className={styles.amount}>
             <div className="container">
