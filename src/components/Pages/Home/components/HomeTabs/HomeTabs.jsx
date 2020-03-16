@@ -46,7 +46,6 @@ export const HomeTabs = () => {
                     src={fundraisers}
                     hoverSrc={rollOver}
                 />
-                {/*<img src={fundraisers} alt=""/>*/}
             </TabPanel>
             <TabPanel className="tabPanel second">
                 <p>By insourcing a quantifiable process for patient outreach and grateful patient identification, your
@@ -139,7 +138,6 @@ export const HomeTabs = () => {
                 <Button text='see how it works'/>
                 <img src={annual} alt="annual"/>
             </TabPanel>
-            <TabPanel className="tabPanel">?</TabPanel>
             <TabPanel className="tabPanel">
                 <p>
                     Integrate your major gift fundraising strategy with your vip/concierge services for frictionless
