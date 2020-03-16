@@ -14,8 +14,10 @@
     letter-spacing: -0.025rem;
   }
   img:first-child {
-    object-fit: contain;
+    object-fit: cover;
+    width:      100%;
     min-height: 12.625rem;
+    max-height: 50rem;
   }
 }
 

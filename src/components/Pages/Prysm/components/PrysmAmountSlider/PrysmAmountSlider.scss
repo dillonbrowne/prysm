@@ -36,6 +36,8 @@
       color:          #333;
       letter-spacing: -0.0475rem;
       line-height:    1.875rem;
+      text-align:     left;
+      padding-left:   2rem;
     }
     .amountList {
       li {
@@ -72,6 +74,14 @@
       ul {
         margin-bottom: 2rem;
       }
+    }
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .prysmAmountSlider {
+    .sliderItem {
+      height: 26rem;
     }
   }
 }
