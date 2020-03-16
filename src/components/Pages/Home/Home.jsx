@@ -84,8 +84,7 @@ export const Home = () => {
                     ? (<>
                         <h3>Why Prysm</h3>
                         <h4>
-                            Increased qualification activity = increased philanthropic revenue.
-                            It’s that simple.
+                            Leverage powerful technology to engage physicians, identify patients and build a sustainable culture of philanthropy.
                         </h4>
                         <HomeTabs/>
                     </>)
