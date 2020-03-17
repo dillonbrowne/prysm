@@ -6,8 +6,8 @@ import {Banner, Button, HowItWorks} from "../../common";
 
 // styles
 import styles from './About.module.scss';
-import banner from "../../../assets/image/about/about-banner.png";
-import haalfTelephone from '../../../assets/image/about/haalfTelephone.jpg'
+import banner from "../../../assets/image/about/about-banner.svg";
+import haalfTelephone from '../../../assets/image/about/haalfTelephone.webp'
 import telephone from '../../../assets/image/about/telephone.jpg'
 
 

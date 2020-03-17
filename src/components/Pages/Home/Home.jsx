@@ -7,7 +7,7 @@ import {HomeTabs, HomeAccordion, SlickSlider} from "./components";
 
 // styles
 import styles from './Home.module.scss';
-import banner from "../../../assets/image/home/banner-home.png";
+import banner from "../../../assets/image/home/banner-home.jpg";
 import logo from '../../../assets/image/logo.svg'
 import logoBlack from '../../../assets/image/logo-black.svg'
 import halfMonitor from '../../../assets/image/home/halfMonitor.svg'
