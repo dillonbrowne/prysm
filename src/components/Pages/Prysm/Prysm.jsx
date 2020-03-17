@@ -13,7 +13,7 @@ import logo from '../../../assets/image/logo.svg'
 import integrations from "../../../assets/image/prysm/integrations.webp";
 import arrow from "../../../assets/image/prysm/arrow.svg";
 import analyze from "../../../assets/image/prysm/analyze.webp";
-import moreTime from "../../../assets/image/prysm/more-time.webp";
+import moreTime from "../../../assets/image/prysm/phone.jpg";
 
 import windfall from "../../../assets/image/partners/windfall.svg";
 import telkdesk from "../../../assets/image/partners/telkdesk.svg";
@@ -21,10 +21,10 @@ import we from "../../../assets/image/partners/we.svg";
 import geopointe from "../../../assets/image/partners/geopointe.svg";
 import total from "../../../assets/image/prysm/total.webp";
 
-import notebook1 from "../../../assets/image/prysm/notebook-1.webp";
-import notebook2 from "../../../assets/image/prysm/notebook-2.webp";
-import notebook3 from "../../../assets/image/prysm/notebook-3.webp";
-import notebook4 from "../../../assets/image/prysm/notebook-4.webp";
+import notebook1 from "../../../assets/image/prysm/notebook.jpg";
+import notebook2 from "../../../assets/image/prysm/notebook_graph.jpg";
+import notebook3 from "../../../assets/image/prysm/dash.jpg";
+import notebook4 from "../../../assets/image/prysm/doppler.jpg";
 
 export const Prysm = ({setModal}) => {
 
