@@ -1,0 +1,112 @@
+@import "../../../assets/scss/variable";
+
+@media (any-hover: hover) {
+
+}
+
+.modalWrapper {
+  background: rgba(0, 0, 0, 0.7);
+  position:   fixed;
+  top:        0;
+  right:      0;
+  bottom:     0;
+  left:       0;
+  z-index:    100;
+  text-align: center;
+  &:before {
+    content:        '';
+    height:         100%;
+    width:          0.0625rem;
+    display:        inline-block;
+    vertical-align: middle;
+  }
+  .modal {
+    margin:         1rem auto;
+    display:        inline-block;
+    vertical-align: middle;
+    background:     $whiteColor;
+    padding:        2rem;
+    border-radius:  0.3125rem;
+    max-width:      90%;
+    position:       relative;
+    h3 {
+      text-align:    center;
+      margin-bottom: 2rem;
+      font-weight:   bold;
+    }
+    .close {
+      font-size: 2rem;
+      position:  absolute;
+      right:     1rem;
+      top:       1rem;
+      cursor:    pointer;
+      &:active {
+        opacity: .8;
+      }
+    }
+    .modalInner {
+      text-align: center;
+      .modalInput {
+        display:        flex;
+        flex-direction: column;
+        label {
+          color:         $lightBrown;
+          margin-bottom: 0.4rem;
+          text-align:    left;
+          cursor:        pointer;
+        }
+        input, textarea {
+          font-size:     1rem;
+          border-radius: 0.3125rem;
+          box-shadow:    none;
+          border:        1px solid #cecece;
+          margin-bottom: 1.2rem;
+          padding:       0.5rem 0 0.5rem 1rem;
+          &:hover {
+            border: 1px solid $blackColor;
+          }
+          &:focus {
+            border: 1px solid $mainColor;
+          }
+        }
+        textarea {
+          max-height: 10rem;
+        }
+      }
+      button {
+        text-transform: uppercase;
+        cursor:         pointer;
+        background:     $mainColor;
+        border-radius:  1.34375rem;
+        font-size:      1rem;
+        color:          $whiteColor;
+        letter-spacing: 0.024375rem;
+        text-align:     center;
+        padding:        0.5rem 2rem;
+        border:         none;
+        &:active {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 567px) {
+  .modalWrapper {
+    .modal {
+      padding: 1rem;
+      h3 {
+        margin-bottom: 1rem;
+      }
+      .modalInner {
+        .modalInput {
+          textarea {
+            max-height: 4rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -11,7 +11,7 @@ import haalfTelephone from '../../../assets/image/about/haalfTelephone.jpg'
 import telephone from '../../../assets/image/about/telephone.jpg'
 
 
-export const About = () => {
+export const About = ({setModal}) => {
     return (<div className={styles.about}>
         <Banner image={banner} text='Your success is our success.'/>
         <section className={`${styles.stay} container`}>
@@ -67,6 +67,6 @@ export const About = () => {
                 </p>
             </div>
         </section>
-        <HowItWorks/>
+        <HowItWorks setModal={setModal}/>
     </div>);
 };

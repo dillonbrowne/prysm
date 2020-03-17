@@ -26,7 +26,7 @@ import notebook2 from "../../../assets/image/prysm/notebook-2.webp";
 import notebook3 from "../../../assets/image/prysm/notebook-3.webp";
 import notebook4 from "../../../assets/image/prysm/notebook-4.webp";
 
-export const Prysm = () => {
+export const Prysm = ({setModal}) => {
 
     const isClient = typeof window === 'object';
     const [windowSize, setWindowSize] = useState(getSize);
@@ -249,6 +249,6 @@ export const Prysm = () => {
                 <span>Ben Golding, Advancement Resources</span>
             </blockquote>
         </section>
-        <HowItWorks/>
+        <HowItWorks setModal={setModal}/>
     </div>);
 };

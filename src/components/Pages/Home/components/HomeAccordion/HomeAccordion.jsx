@@ -177,16 +177,6 @@ export const HomeAccordion = () => {
                 </AccordionItemPanel>
             </AccordionItem>
             <AccordionItem>
-                <HomeAccordionItemHeading title='Patient Experience'/>
-                <AccordionItemPanel className="accordionPanel">
-                    <h3>Why Prysm</h3>
-                    <h4>
-                        Increased qualification activity = increased philanthropic revenue.
-                        It’s that simple.
-                    </h4>
-                </AccordionItemPanel>
-            </AccordionItem>
-            <AccordionItem>
                 <HomeAccordionItemHeading title='PVIP Concierge'/>
                 <AccordionItemPanel className="accordionPanel">
                     <h3>Why Prysm</h3>

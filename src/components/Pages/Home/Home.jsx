@@ -20,7 +20,7 @@ import telkdesk from '../../../assets/image/partners/telkdesk.svg'
 import we from '../../../assets/image/partners/we.svg'
 import windfall from '../../../assets/image/partners/windfall.svg'
 
-export const Home = () => {
+export const Home = ({setModal}) => {
     const isClient = typeof window === 'object';
     const [windowSize, setWindowSize] = useState(getSize);
 
@@ -112,6 +112,6 @@ export const Home = () => {
             </div>
         </section>
         <hr/>
-        <HowItWorks/>
+        <HowItWorks setModal={setModal}/>
     </div>);
 };

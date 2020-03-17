@@ -7,13 +7,13 @@ import {Button} from "..";
 // styles
 import styles from './HowItWorks.module.scss';
 
-export const HowItWorks = () => {
+export const HowItWorks = ({setModal}) => {
     return (
         <section className={styles.how}>
             <h3>Discover how Prysm can work for you.</h3>
             <div className={styles.howButtons}>
                 <Button text='see how it works'/>
-                <Button text='request a demo'/>
+                <Button setModal={setModal} text='request a demo'/>
             </div>
         </section>
     );
