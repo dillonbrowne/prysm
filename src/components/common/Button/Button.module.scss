@@ -12,11 +12,12 @@
   cursor:         pointer;
   background:     $mainColor;
   border-radius:  1.34375rem;
-  font-size:      0.6875rem;
+  font-size:      0.75rem;
+  font-weight: 800;
   color:          $whiteColor;
   letter-spacing: 0.024375rem;
   text-align:     center;
-  padding:        0.35rem 0.8rem;
+  padding:        0.45rem 0.9rem;
   border:         none;
   &:active {
     opacity: 0.8;

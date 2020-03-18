@@ -49,15 +49,19 @@ export const Home = ({setModal}) => {
             <div className={styles.stayLeft}>
                 <div className={styles.stayLeftInner}>
                     {windowSize.width < 767 && <div className={styles.homeLogo}><img src={logoBlack} alt="logo"/></div>}
-                    <h3>
-                        Stay connected to clinicians and patients through a streamlined process that increases
+                    <h2>
+                        Stay connected to clinicians and  <br />patients through a streamlined process  <br />that increases
                         philanthropy.
-                    </h3>
+                    </h2>
+                    <br />
+                    <br />
+                    <br />
                     <p>
                         Prysm is the first constituent relationship management application developed for non-profit
                         healthcare. Prysm provides philanthropic foundations with a proven, repeatable process to
                         effectively engage clinicians, elevate patient experience and improve philanthropic outcomes.
                     </p>
+                    <br />
                     <p>
                         By introducing an advanced lead generation component to your grateful patient program, your
                         fundraising strategy becomes more intentional and your donor management system is able to
@@ -75,7 +79,8 @@ export const Home = ({setModal}) => {
             </div>
         </section>
         <section className={`${styles.grateful} container`}>
-            <h3>Grateful Patient Philanthropy 2.0</h3>
+            <h2>Grateful Patient Philanthropy 2.0</h2>
+            <br />
             <SlickSlider/>
         </section>
         <section className={styles.why}>

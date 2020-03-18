@@ -1,4 +1,5 @@
 @import "assets/scss/variable";
+//@import url("https://use.typekit.net/zgc3xjf.css");
 
 body, html {
   margin:      0;
@@ -35,24 +36,31 @@ h1 {
   line-height:    1;
 }
 
+h2 {
+  font-weight: 100;
+  font-size:   2.75rem;
+  line-height: 3.75rem;
+
+}
+
 h3 {
   font-weight: 100;
-  font-size:   1.875rem;
+  font-size:   2rem;
   line-height: 2.5rem;
 }
 
 h4 {
-  font-size:      1rem;
-  letter-spacing: -0.035rem;
-  line-height:    1.4375rem;
+  font-size:      1.5rem;
+  letter-spacing: -0.001rem;
+  line-height:    1.8rem;
 }
 
 p {
   font-weight:    400;
-  font-size:      0.875rem;
+  font-size:      1.45rem;
   color:          $lightBrown;
   letter-spacing: 0.001875rem;
-  line-height:    1.1875rem;
+  line-height:    1.75rem;
   margin-bottom:  1.2rem;
 }
 
