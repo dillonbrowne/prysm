@@ -14,6 +14,7 @@ export const Banner = ({logo = false, image, text, windowSize = false}) => {
             <Img src={image} alt='banner' className={styles.cover}/>
 
             {windowSize.width > 767 && logo && <Img src={logo} alt="logo" className={styles.logo}/>}
+
             <h1>{text}</h1>
 
         </section>
