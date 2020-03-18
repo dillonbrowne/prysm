@@ -1,6 +1,6 @@
 // core
 import React from 'react';
-
+import Img from "react-image"
 // library
 import Slider from "react-slick/lib";
 
@@ -30,21 +30,21 @@ export const SlickSlider = () => {
     return (<div className='slickSlider'>
         <Slider {...settings}>
             <div className='sliderItem'>
-                <img src={message} alt="message"/>
+                <Img src={message} alt="message"/>
                 <p>
                     Strengthen stakeholder relationships with a science based approach that measures contact
                     attempts, answered phone calls and detailed discovery information.
                 </p>
             </div>
             <div className='sliderItem'>
-                <img src={diagram} alt="diagram"/>
+                <Img src={diagram} alt="diagram"/>
                 <p>
                     An intuitive, repeatable process designed by fundraisers allows users to move hundreds of
                     patients through the identification – qualification process with minimal friction.
                 </p>
             </div>
             <div className='sliderItem'>
-                <img src={people} alt="people"/>
+                <Img src={people} alt="people"/>
                 <p>
                     Understand which clinicians and departments represent the best fundraising opportunities,
                     based

@@ -1,7 +1,7 @@
 // core
 import React from 'react';
 import {Accordion, AccordionItem, AccordionItemPanel} from 'react-accessible-accordion';
-
+import Img from "react-image"
 
 // components
 
@@ -29,7 +29,7 @@ export const PrysmAccordion = () => {
                         follow
                         up reporting, they are highly willing to partner with development.
                     </h3>
-                    <img src={step1} alt="step1"/>
+                    <Img src={step1} alt="step1"/>
                 </AccordionItemPanel>
             </AccordionItem>
             <AccordionItem>
@@ -40,7 +40,7 @@ export const PrysmAccordion = () => {
                         follow
                         up reporting, they are highly willing to partner with development.
                     </h3>
-                    <img src={step2} alt="step2"/>
+                    <Img src={step2} alt="step2"/>
                 </AccordionItemPanel>
             </AccordionItem>
             <AccordionItem>
@@ -50,7 +50,7 @@ export const PrysmAccordion = () => {
                         Intuitive in-platform phone call and email tracking enables fundraisers to efficiently record
                         discovery activity.
                     </h3>
-                    <img src={step3} alt="step3"/>
+                    <Img src={step3} alt="step3"/>
                 </AccordionItemPanel>
             </AccordionItem>
             <AccordionItem>
@@ -61,7 +61,7 @@ export const PrysmAccordion = () => {
                         scoring
                         model that combines affinity and capacity.
                     </h3>
-                    <img src={step4} alt="step4"/>
+                    <Img src={step4} alt="step4"/>
                 </AccordionItemPanel>
             </AccordionItem>
             <AccordionItem>
@@ -70,7 +70,7 @@ export const PrysmAccordion = () => {
                     <h3>
                         Easily track and record outcomes of discovery activity to optimize program strategy.
                     </h3>
-                    <img src={step5} alt="step5"/>
+                    <Img src={step5} alt="step5"/>
                 </AccordionItemPanel>
             </AccordionItem>
 

@@ -1,7 +1,7 @@
 // core
 import React from 'react';
 import {Tabs, TabList, Tab, TabPanel} from 'react-tabs'
-
+import Img from "react-image"
 // styles
 import './PrysmTabs.scss';
 import step1 from '../../../../../assets/image/prysm/step-1.svg'
@@ -36,34 +36,34 @@ export const PrysmTabs = () => {
                     When clinicians are engaged in a process with analytically sound information and consistent follow
                     up reporting, they are highly willing to partner with development.
                 </h3>
-                <img src={step1} alt="step1"/>
+                <Img src={step1} alt="step1"/>
             </TabPanel>
             <TabPanel className="tabPanel">
                 <h3>
                     When clinicians are engaged in a process with analytically sound information and consistent follow
                     up reporting, they are highly willing to partner with development.
                 </h3>
-                <img src={step2} alt="step2"/>
+                <Img src={step2} alt="step2"/>
             </TabPanel>
             <TabPanel className="tabPanel alignStart">
                 <h3 className="moveStepThree">
                     Intuitive in-platform phone call and email tracking enables fundraisers to efficiently record
                     discovery activity.
                 </h3>
-                <img className="stepThreeImg" src={step3} alt="step3"/>
+                <Img className="stepThreeImg" src={step3} alt="step3"/>
             </TabPanel>
             <TabPanel className="tabPanel">
                 <h3>
                     Intuitive single click reporting enables fundraisers to view clinicians’ patients using a scoring
                     model that combines affinity and capacity.
                 </h3>
-                <img src={step4} alt="step4"/>
+                <Img src={step4} alt="step4"/>
             </TabPanel>
             <TabPanel className="tabPanel">
                 <h3>
                     Easily track and record outcomes of discovery activity to optimize program strategy.
                 </h3>
-                <img src={step5} alt="step5"/>
+                <Img src={step5} alt="step5"/>
             </TabPanel>
 
         </Tabs>

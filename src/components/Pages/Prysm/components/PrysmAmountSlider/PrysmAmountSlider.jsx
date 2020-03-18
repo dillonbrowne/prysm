@@ -3,7 +3,7 @@ import React from 'react';
 
 // library
 import Slider from "react-slick";
-
+import Img from "react-image"
 // styles
 import './PrysmAmountSlider.scss';
 import logoBlack from "../../../../../assets/image/logo-black.svg";
@@ -55,7 +55,7 @@ export const PrysmAmountSlider = () => {
                     <li>2 MGO’s + 2 Dev Associates</li>
                     <li>Ellucian Advance</li>
                 </ul>
-                <img src={logoBlack} alt="logo"/>
+                <Img src={logoBlack} alt="logo"/>
             </div>
         </Slider>
     </div>);

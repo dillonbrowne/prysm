@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 
 //library
 import {NavLink, Link} from 'react-router-dom';
-
+import Img from "react-image"
 //styles
 import styles from './Header.module.scss';
 import logo from "../../../assets/image/home/headerLogo.svg";
@@ -21,7 +21,7 @@ export const Header = ({setModal}) => {
         <header className={`${styles.header} container`}>
             <div className={styles.headerInner}>
                 <Link to="/home">
-                    <img className={styles.logo} src={logo} alt="logo"/>
+                    <Img className={styles.logo} src={logo} alt="logo"/>
                 </Link>
                  <menu className={`${styles.menu} ${!active ? styles.hide : ''}`}>
                     <ul>
@@ -45,7 +45,7 @@ export const Header = ({setModal}) => {
                         onClick={() => addClass()}>
                     <span className={styles.burgerMenuLines}/>
                 </button>
-                <a href="/" className={styles.linkedin}><img src={linkedin} alt="linkedin"/></a>
+                <a href="/" className={styles.linkedin}><Img src={linkedin} alt="linkedin"/></a>
             </div>
         </header>
     );

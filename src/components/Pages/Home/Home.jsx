@@ -4,7 +4,7 @@ import React, {useState, useEffect} from 'react';
 // components
 import {Banner, Button, HowItWorks} from "../../common";
 import {HomeTabs, HomeAccordion, SlickSlider} from "./components";
-
+import Img from "react-image"
 // styles
 import styles from './Home.module.scss';
 import banner from "../../../assets/image/home/banner-home.jpg";
@@ -48,7 +48,7 @@ export const Home = ({setModal}) => {
         <section className={`${styles.stay} container`}>
             <div className={styles.stayLeft}>
                 <div className={styles.stayLeftInner}>
-                    {windowSize.width < 767 && <div className={styles.homeLogo}><img src={logoBlack} alt="logo"/></div>}
+                    {windowSize.width < 767 && <div className={styles.homeLogo}><Img src={logoBlack} alt="logo"/></div>}
                     <h2>
                         Stay connected to clinicians and  <br />patients through a streamlined process  <br />that increases
                         philanthropy.
@@ -74,8 +74,8 @@ export const Home = ({setModal}) => {
                 </div>
             </div>
             <div className={styles.stayRight}>
-                <img className={styles.halfMonitor} src={halfMonitor} alt="monitor"/>
-                <img className={styles.monitor} src={monitor} alt="monitor"/>
+                <Img className={styles.halfMonitor} src={halfMonitor} alt="monitor"/>
+                <Img className={styles.monitor} src={monitor} alt="monitor"/>
             </div>
         </section>
         <section className={`${styles.grateful} container`}>
@@ -109,11 +109,11 @@ export const Home = ({setModal}) => {
         </section>
         <section className={styles.partners}>
             <div className={styles.partnersInner}>
-                <img src={cetrix} alt="cetrix"/>
-                <img src={geopointe} alt="geopointe"/>
-                <img src={we} alt="we"/>
-                <img src={windfall} alt="windfall"/>
-                <img src={telkdesk} alt="telkdesk"/>
+                <Img src={cetrix} alt="cetrix"/>
+                <Img src={geopointe} alt="geopointe"/>
+                <Img src={we} alt="we"/>
+                <Img src={windfall} alt="windfall"/>
+                <Img src={telkdesk} alt="telkdesk"/>
             </div>
         </section>
         <hr/>

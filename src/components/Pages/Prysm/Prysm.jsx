@@ -4,7 +4,7 @@ import React, {useEffect, useState} from 'react';
 // components
 import {Banner, HowItWorks} from "../../common";
 import {PrysmAccordion, PrysmSlider, PrysmTabs, PrysmAmountSlider} from "./components";
-
+import Img from "react-image"
 
 // styles
 import styles from './Prysm.module.scss';
@@ -74,7 +74,7 @@ export const Prysm = ({setModal}) => {
             <h3>
                 Prysm integrates seamlessly with your health system’s EMR and Donor Management System.
             </h3>
-            <img className={styles.integrations} src={integrations} alt="integrations"/>
+            <Img className={styles.integrations} src={integrations} alt="integrations"/>
         </section>
         <section className={`${styles.major} container`}>
             <h3>
@@ -96,28 +96,28 @@ export const Prysm = ({setModal}) => {
             </h4>
             <ul className={styles.resultsList}>
                 <li className={styles.resultsItem}>
-                    <img src={arrow} alt="arrow"/>
+                    <Img src={arrow} alt="arrow"/>
                     <div className={styles.resultsText}>
                         <div>425%</div>
                         <span>Introductory Phone Calls</span>
                     </div>
                 </li>
                 <li className={styles.resultsItem}>
-                    <img src={arrow} alt="arrow"/>
+                    <Img src={arrow} alt="arrow"/>
                     <div className={styles.resultsText}>
                         <div>475%</div>
                         <span>Qualification Meetings</span>
                     </div>
                 </li>
                 <li className={styles.resultsItem}>
-                    <img src={arrow} alt="arrow"/>
+                    <Img src={arrow} alt="arrow"/>
                     <div className={styles.resultsText}>
                         <div>1,200%</div>
                         <span> Qualified Patients</span>
                     </div>
                 </li>
                 <li className={styles.resultsItem}>
-                    <img src={arrow} alt="arrow"/>
+                    <Img src={arrow} alt="arrow"/>
                     <div className={styles.resultsText}>
                         <div>$1.8M</div>
                         <span>First Time Grateful
@@ -127,14 +127,14 @@ export const Prysm = ({setModal}) => {
             </ul>
         </section>
         <section className={`${styles.analyze} container`}>
-            <img className={styles.analyzemonitor} src={analyze} alt="analyze"/>
+            <Img className={styles.analyzemonitor} src={analyze} alt="analyze"/>
             <h3>Analyze program growth and performance in real time to identify opportunities and maximize results.</h3>
         </section>
         <section className={styles.partners}>
             <div className="container">
                 <ul className={styles.partnersList}>
                     <li>
-                        <img className={styles.partnerImage} src={moreTime} alt="more time"/>
+                        <Img className={styles.partnerImage} src={moreTime} alt="more time"/>
                         <div className={styles.partnersDescription}>
                             <h3>What would you do with more time?</h3>
                             <p>
@@ -148,9 +148,9 @@ export const Prysm = ({setModal}) => {
                         </div>
                     </li>
                     <li>
-                        <img className={styles.partnerImage} src={notebook1} alt="notebook"/>
+                        <Img className={styles.partnerImage} src={notebook1} alt="notebook"/>
                         <div className={styles.partnersDescription}>
-                            <h3><img src={windfall} alt="windfall"/></h3>
+                            <h3><Img src={windfall} alt="windfall"/></h3>
                             <p>
                                 Windfall is changing the way that organizations identify, understand, and engage the
                                 affluent. Through next generation API technology, Windfall’s data science and machine
@@ -169,9 +169,9 @@ export const Prysm = ({setModal}) => {
                         </div>
                     </li>
                     <li>
-                        <img className={styles.partnerImage} src={notebook2} alt="notebook"/>
+                        <Img className={styles.partnerImage} src={notebook2} alt="notebook"/>
                         <div className={styles.partnersDescription}>
-                            <h3><img src={telkdesk} alt="telkdesk"/></h3>
+                            <h3><Img src={telkdesk} alt="telkdesk"/></h3>
                             <p>
                                 Through an innovation partnership with TalkDesk, Prysm provides a seamless discovery
                                 visit scheduling process that drives transformational patient outreach.
@@ -179,9 +179,9 @@ export const Prysm = ({setModal}) => {
                         </div>
                     </li>
                     <li>
-                        <img className={styles.partnerImage} src={notebook3} alt="notebook3"/>
+                        <Img className={styles.partnerImage} src={notebook3} alt="notebook3"/>
                         <div className={styles.partnersDescription}>
-                            <h3><img src={we} alt="we"/></h3>
+                            <h3><Img src={we} alt="we"/></h3>
                             <p>
                                 By combining WealthEngine’s proven wealth screening technology with real-time patient
                                 encounter analysis and integrated AI, Prysm transforms development’s ability to engage
@@ -190,9 +190,9 @@ export const Prysm = ({setModal}) => {
                         </div>
                     </li>
                     <li>
-                        <img className={styles.partnerImage} src={notebook4} alt="notebook"/>
+                        <Img className={styles.partnerImage} src={notebook4} alt="notebook"/>
                         <div className={`${styles.partnersDescription} ${styles.direct}`}>
-                            <h3><img src={geopointe} alt="geopointe"/></h3>
+                            <h3><Img src={geopointe} alt="geopointe"/></h3>
                             <p>
                                 Gain deep insight into your patient population with Geopointe.
                             </p>
@@ -230,7 +230,7 @@ export const Prysm = ({setModal}) => {
                     donations totaling $1.8M.
                 </p>
             </div>
-            <img className={styles.total} src={total} alt="total"/>
+            <Img className={styles.total} src={total} alt="total"/>
         </section>
         <section className={styles.amount}>
             <div className="container">

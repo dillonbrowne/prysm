@@ -3,7 +3,7 @@ import React from 'react';
 
 // library
 import Slider from "react-slick";
-
+import Img from "react-image"
 // styles
 import './PrysmSlider.scss';
 import development from "../../../../../assets/image/prysm/development.svg";
@@ -32,7 +32,7 @@ export const PrysmSlider = () => {
     return (<div className='prysmSlider'>
         <Slider {...settings}>
             <div className='sliderItem'>
-                <img src={development} alt="message"/>
+                <Img src={development} alt="message"/>
                 <h4>Grateful Patient <br/> Pipeline Development</h4>
                 <ul>
                     <li>Major giving lead generation</li>
@@ -43,7 +43,7 @@ export const PrysmSlider = () => {
                 </ul>
             </div>
             <div className='sliderItem'>
-                <img src={comunications} alt="diagram"/>
+                <Img src={comunications} alt="diagram"/>
                 <h4>Communications</h4>
                 <ul>
                     <li>E-marketing & newsletters</li>
@@ -52,7 +52,7 @@ export const PrysmSlider = () => {
                 </ul>
             </div>
             <div className='sliderItem'>
-                <img src={analytic} alt="people"/>
+                <Img src={analytic} alt="people"/>
                 <h4>List Management<br/>
                     & Reporting</h4>
                 <ul>
@@ -64,7 +64,7 @@ export const PrysmSlider = () => {
                 </ul>
             </div>
             <div className='sliderItem'>
-                <img src={integration} alt="people"/>
+                <Img src={integration} alt="people"/>
                 <h4>Native <br/>
                     Integrations</h4>
                 <ul>

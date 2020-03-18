@@ -3,7 +3,7 @@ import React from 'react';
 
 // components
 import {Banner, Button, HowItWorks} from "../../common";
-
+import Img from "react-image"
 // styles
 import styles from './About.module.scss';
 import banner from "../../../assets/image/about/about-banner.jpg";
@@ -38,8 +38,8 @@ export const About = ({setModal}) => {
                 </div>
             </div>
             <div className={styles.stayRight}>
-                <img className={styles.halfMonitor} src={haalfTelephone} alt="monitor"/>
-                <img className={styles.monitor} src={telephone} alt="monitor"/>
+                <Img className={styles.halfMonitor} src={haalfTelephone} alt="monitor"/>
+                <Img className={styles.monitor} src={telephone} alt="monitor"/>
             </div>
         </section>
         <section className={styles.generation}>
