@@ -51,7 +51,7 @@ export const Prysm = ({setModal}) => {
 
 
     return (<div className={styles.prysm}>
-        <Banner logo={logo} image={banner} text='How it works' />
+        <Banner logo={logo} image={banner} text='How it works' windowSize={windowSize} />
         <div className={`${styles.provide} container`}>
             <h3>
                 Prysm provides an enterprise wide process supported by technology to drive clinician engagement and
