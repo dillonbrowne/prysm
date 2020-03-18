@@ -45,6 +45,7 @@
   .react-tabs__tab-panel--selected {
     width: 100%;
   }
+
   .tabPanel {
     min-height:      20rem;
     padding:         1rem 0 1rem 2.6rem;
@@ -53,6 +54,9 @@
     display:         none;
     &.react-tabs__tab-panel--selected {
       display: flex;
+    }
+    .moveStepThree{
+      margin-top: 1em;
     }
     h3 {
       width: 44%;
@@ -65,5 +69,8 @@
     img {
       width: 54%;
     }
+  }
+  .alignStart{
+    align-items:     flex-start;
   }
 }

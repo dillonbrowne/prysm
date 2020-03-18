@@ -2,14 +2,14 @@
 
 .prysm {
   .integrations {
-    max-width: 25%
+    max-width: 45%
   }
   .analyzemonitor {
     max-width:   30%;
     margin-left: 8em;
   }
   .total {
-    max-width: 25%
+    max-width: 45%
   }
   .provide {
     padding:    1.3rem 2rem;
@@ -167,17 +167,19 @@
             margin-bottom: 1.5rem;
           }
           p {
-            font-size:      1.125rem;
+            font-size:      1.9rem;
             color:          #7e7670;
             letter-spacing: -0.02rem;
-            line-height:    1.4375rem;
+            line-height:    2.4rem;
             margin-bottom:  1.2rem;
           }
           ul {
             font-weight:     bold;
             list-style-type: disc;
+            font-size:      1.2rem;
             li {
               line-height: 1.5;
+
             }
           }
           .partnerRate {
@@ -254,7 +256,7 @@
     justify-content: space-between;
     align-items:     center;
     .caseDescription {
-      width:   36.4%;
+      width:   40%;
       padding: 0;
     }
     img {

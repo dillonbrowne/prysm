@@ -51,7 +51,7 @@ export const Prysm = ({setModal}) => {
 
 
     return (<div className={styles.prysm}>
-        <Banner image={banner} text='How it works' logo={logo}/>
+        <Banner logo={logo} image={banner} text='How it works' />
         <div className={`${styles.provide} container`}>
             <h3>
                 Prysm provides an enterprise wide process supported by technology to drive clinician engagement and
@@ -214,7 +214,9 @@ export const Prysm = ({setModal}) => {
         </section>
         <section className={`${styles.case} container`}>
             <div className={styles.caseDescription}>
-                <h3>Case Study: Major Academic Medical Center</h3>
+                <h3>Case Study: Major<br /> Academic Medical Center</h3>
+                <br />
+                <br />
                 <p>
                     This academic medical center had no prior history of grateful patient philanthropy, flat wealth
                     screening results, low physician engagement, multiple health system re-brandings and a 100%

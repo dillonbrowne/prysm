@@ -45,12 +45,12 @@ export const PrysmTabs = () => {
                 </h3>
                 <img src={step2} alt="step2"/>
             </TabPanel>
-            <TabPanel className="tabPanel">
-                <h3>
+            <TabPanel className="tabPanel alignStart">
+                <h3 className="moveStepThree">
                     Intuitive in-platform phone call and email tracking enables fundraisers to efficiently record
                     discovery activity.
                 </h3>
-                <img src={step3} alt="step3"/>
+                <img className="stepThreeImg" src={step3} alt="step3"/>
             </TabPanel>
             <TabPanel className="tabPanel">
                 <h3>
