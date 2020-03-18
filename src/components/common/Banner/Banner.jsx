@@ -10,7 +10,7 @@ export const Banner = ({logo = false, image, text, windowSize = false}) => {
     return (
         <section className={`${styles.banner} container`}>
             <img src={upper} alt="lower" className={styles.upper} />
-            {/*<img src={lower} alt="upper" className={styles.lower} />*/}
+            <img src={lower} alt="upper" className={styles.lower} />
             <img src={image} alt='banner' className={styles.cover}/>
 
             {windowSize.width > 767 && logo && <img src={logo} alt="logo" className={styles.logo}/>}

@@ -17,7 +17,7 @@ export const App = () => {
 
     return (
         <div className={styles.app}>
-            <Header/>
+            <Header setModal={setModal} />
             <main className={styles.main}>
                 <Switch>
                     <Redirect exact from='/' to={routes.home}/>

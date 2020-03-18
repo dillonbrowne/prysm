@@ -6,7 +6,7 @@ import {Banner, Button, HowItWorks} from "../../common";
 
 // styles
 import styles from './About.module.scss';
-import banner from "../../../assets/image/about/about-banner.svg";
+import banner from "../../../assets/image/about/about-banner.jpg";
 import haalfTelephone from '../../../assets/image/about/haalfTelephone.webp'
 import telephone from '../../../assets/image/about/telephone.jpg'
 
@@ -17,6 +17,8 @@ export const About = ({setModal}) => {
         <section className={`${styles.stay} container`}>
             <div className={styles.stayLeft}>
                 <div className={styles.stayLeftInner}>
+                    <br />
+                    <br />
                     <h3>
                         Our mission is to advance global healthcare one client at a time.
                     </h3>

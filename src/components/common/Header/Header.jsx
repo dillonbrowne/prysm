@@ -8,10 +8,14 @@ import styles from './Header.module.scss';
 import logo from "../../../assets/image/home/headerLogo.svg";
 import linkedin from "../../../assets/image/home/linkedin.svg";
 
-export const Header = () => {
+export const Header = ({setModal}) => {
     const [active, setActive] = useState(false);
     const addClass = () => {
         setActive(!active);
+    };
+
+    const openModal = () => {
+        setModal(true);
     };
     return (
         <header className={`${styles.header} container`}>
@@ -29,6 +33,9 @@ export const Header = () => {
                         </li>
                         <li onClick={() => addClass()}>
                             <NavLink to='/about' activeClassName={styles.active}>About</NavLink>
+                        </li>
+                        <li onClick={() => addClass()}>
+                            <NavLink to='#modal'  onClick={(e) => openModal(e)}>Contact Us</NavLink>
                         </li>
 
                     </ul>
