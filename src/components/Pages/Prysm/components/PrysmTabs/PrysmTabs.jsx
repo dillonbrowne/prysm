@@ -33,8 +33,7 @@ export const PrysmTabs = () => {
             </TabList>
             <TabPanel className="tabPanel">
                 <h3>
-                    When clinicians are engaged in a process with analytically sound information and consistent follow
-                    up reporting, they are highly willing to partner with development.
+                    Single click reporting and automated encounter analysis provides fundraisers with real time access to patients with greatest affinity and capacity.
                 </h3>
                 <Img src={step1} alt="step1"/>
             </TabPanel>
